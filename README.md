@@ -14,7 +14,7 @@ Apply classes to an element using the `class` attribute<br />
 
 .font-sans
 .font-serif
--font-mono
+.font-mono
 
 .big-text
 ```
@@ -22,6 +22,7 @@ Apply classes to an element using the `class` attribute<br />
 **Button classes**<br />
 ```css
 .primary
+.secondary
 
 ```
 
