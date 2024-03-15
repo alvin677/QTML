@@ -1,0 +1,97 @@
+/* QTML Stylesheet */
+
+:root { /* default variables */
+    --qtml--font: 'Arial', sans-serif; /* font */
+    --qtml--bg: #161616; /* background color */
+
+    --qtml--color: #ffffff; /* text color */
+    --qtml--color-secondary: #bbbbbb; /* secondary text color */
+
+    --qtml--accent: #fff; /* accent color */
+    --qtml--accent-hover: #fff; /* accent hover color */
+    
+
+}
+
+/* Themes */
+[qtml-theme="purple"] {
+    --qtml--accent: hsl(261deg 80% 48%);
+    --qtml--accent-hover: hsl(261deg 80% 50%);
+}
+[qtml-theme="cyan"] {
+    --qtml--accent: #3df2ad;
+    --qtml--accent-hover: #4df2ad;
+}
+[qtml-theme="red"] {
+    --qtml--accent: #f56565;
+    --qtml--accent-hover: #ef4444;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--qtml--bg);
+    font-family: var(--qtml--font)
+}
+
+
+/* Utilities */
+.gradient {
+    /*background: -webkit-radial-gradient(circle, var(--qtml--accent) 0%,var(--qtml--accent) 21%,var(--qtml--accent) 51%,#ffffff 100%);*/
+    background: -webkit-linear-gradient(45deg, var(--qtml--accent), #ffffff 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.reverse-gradient {
+    background: -webkit-linear-gradient(45deg, #ffffff, var(--qtml--accent) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.primary {
+    border-radius:10px;
+    background:#111;
+    border:none;
+    transition:0.3s;
+    padding: 6px 12px;
+    color: var(--qtml--color-secondary);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.primary:hover {
+    box-shadow:0 0 10px var(--qtml--accent);
+    background:var(--qtml--accent-hover);
+    border-radius:6px;
+    transition:0.3s;
+    color:black;
+    cursor:pointer;
+}
+
+.font-sans {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+.font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.big-text {
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+
+@media (min-width: 768px) {
+    .big-text {
+        font-weight: 800;
+        font-size: 4.5rem;
+    }
+}
