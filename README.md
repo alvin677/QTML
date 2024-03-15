@@ -2,9 +2,12 @@
 A HTML framework to simplify web design.<br/>
 
 # List of all available classes
-Apply classes to an element using the `class` attribute ```html <element class="class-here"></element>```
+Apply classes to an element using the `class` attribute<br /> 
+```html 
+<element class="class-here"></element>
+```
 **Universal classes**<br />
-*Most classes can be combined to design HTML elements.*
+*Most classes can be combined to design HTML elements.*<br />
 ```css
 .gradient
 .reverse-gradient
