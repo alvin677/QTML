@@ -42,12 +42,10 @@ Apply classes to an element using the `class` attribute<br />
   </body>
 </html>
 ```
-<br />
 **Gradient text** can easily be created using the `gradient` or `reverse-gradient` class.
 ```html
 <h1 class = "gradient">Hello World!</h1>
 ```
-<br />
 **Larger text** can easily be created using the `big-text` class.
 ```html
 <h1 class = "big-text">Hello World!</h1>
