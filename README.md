@@ -18,7 +18,6 @@ Apply classes to an element using the `class` attribute<br />
 
 .big-text
 ```
-<br />
 **Button classes**<br />
 ```css
 .primary
