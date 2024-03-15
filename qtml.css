@@ -2,7 +2,9 @@
 
 :root { /* default variables */
     --qtml--font: 'Arial', sans-serif; /* font */
+
     --qtml--bg: #161616; /* background color */
+    --qtml--bg-secondary: #191919; /* secondary background color */
 
     --qtml--color: #ffffff; /* text color */
     --qtml--color-secondary: #bbbbbb; /* secondary text color */
@@ -31,30 +33,25 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
+    box-sizing: border-box;}
 body {
     background-color: var(--qtml--bg);
-    font-family: var(--qtml--font)
-}
-
+    font-family: var(--qtml--font)}
+p {
+    color: var(--qtml--color);}
 
 /* Utilities */
 .gradient {
-    /*background: -webkit-radial-gradient(circle, var(--qtml--accent) 0%,var(--qtml--accent) 21%,var(--qtml--accent) 51%,#ffffff 100%);*/
     background: -webkit-linear-gradient(45deg, var(--qtml--accent), #ffffff 80%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    -webkit-text-fill-color: transparent;}
 .reverse-gradient {
     background: -webkit-linear-gradient(45deg, #ffffff, var(--qtml--accent) 80%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    -webkit-text-fill-color: transparent;}
 
 /* Components */
-.primary {
+button.primary {
     border-radius:10px;
     background:#111;
     border:none;
@@ -62,32 +59,36 @@ body {
     padding: 6px 12px;
     color: var(--qtml--color-secondary);
     font-weight: bold;
-    letter-spacing: 0.5px;
-}
-
-.primary:hover {
+    letter-spacing: 0.5px;}
+button.primary:hover {
     box-shadow:0 0 10px var(--qtml--accent);
     background:var(--qtml--accent-hover);
     border-radius:6px;
     transition:0.3s;
     color:black;
-    cursor:pointer;
-}
-
+    cursor:pointer;}
+.container {
+    background-color: var(--qtml--bg-secondary);
+    border: 2px solid #202020;
+    border-radius: 20px;
+    height: auto;
+    transition: 0.2s;
+    display: inline-block;}
+.container:hover {
+    border: 2px solid #303030;}
 .font-sans {
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
 .font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;}
 .font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
 .big-text {
     font-weight: 800;
-    font-size: 2.25rem;
-}
+    font-size: 2.25rem;}
+.flex {
+    display: inline-flex;}
+.block {
+    display: inline-block;}
 
 @media (min-width: 768px) {
     .big-text {
