@@ -9,8 +9,8 @@
     --qtml--color: #ffffff; /* text color */
     --qtml--color-secondary: #cccccc; /* secondary text color */
 
-    --qtml--accent: #fff; /* accent color */
-    --qtml--accent-hover: #fff; /* accent hover color */
+    --qtml--accent: #fcfcfc; /* accent color */
+    --qtml--accent-hover: #ffffff; /* accent hover color */
 
     --qtml--outline: 2px solid;
     --qtml--outline-color: #404040;
@@ -110,6 +110,13 @@ a {
 a:hover {
     color: var(--qtml--accent-hover);
     transition:var(--qtml--transition);}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: var(--qtml--padding);
+    text-align: center;
+}
 /* Utilities */
 .gradient {
     background: -webkit-linear-gradient(45deg, var(--qtml--accent), var(--qtml--color) 80%);
@@ -138,15 +145,36 @@ button.primary {
     border-color: var(--qtml--outline-color);}
 button.primary:hover {
     box-shadow:0 0 10px var(--qtml--accent);
-    background:var(--qtml--accent-hover);
+    background:var(--qtml--accent);
     transition:var(--qtml--transition);
     color:var(--qtml--bg);
     cursor:pointer;
     border: var(--qtml--outline);
-    border-color: var(--qtml--accent-hover);}
+    border-color: var(--qtml--accent);}
 button.primary:active {
     transform: scale(0.95);
     transition:var(--qtml--transition);}
+button.secondary {
+    padding: var(--qtml--padding);
+    border-radius: var(--qtml--border-radius);
+    border: 0;
+    background: var(--qtml--element-background);
+    letter-spacing: 1.5px;
+    transition: all .5s ease;
+    color: var(--qtml--color);}
+button.secondary:hover {
+    letter-spacing: 3px;
+    background-color: var(--qtml--accent);
+    color: var(--qtml--bg);
+    box-shadow: var(--qtml--accent) 0px 7px 29px 0px;
+    cursor:pointer;}
+button.secondary:active {
+    letter-spacing: 3px;
+    background-color: var(--qtml--accent);
+    color: var(--qtml--bg);
+    box-shadow: var(--qtml--accent) 0px 0px 0px 0px;
+    transform: translateY(4px);
+    transition: 100ms;}
 input.primary {
     background: var(--qtml--element-background);
     border: var(--qtml--outline);
@@ -244,7 +272,6 @@ i.secondary {
     animation-duration:4s;
     animation-iteration-count:infinite;}
 @keyframes pulse_anim {
-    0% { color: var(--qtml--color); }
+    0%, 100% { color: var(--qtml--color); }
     50% { color: var(--qtml--accent); text-shadow: var(--qtml--accent) 1px 0 10px; }
-    100% { color: var(--qtml--color); }
 }
