@@ -28,6 +28,7 @@
     --qtml--font-size-mobile: 16px;
     --qtml--scale: 1.2;
     --qtml--scale-mobile: 0.8;
+    --qtml--scale-default: 1;
 
     --qtml--shadetext: #71717a;
 }
@@ -66,8 +67,8 @@
     --qtml--outline-hover: #bbbbbb;
 }
 [qtml-mode="dark"] {
-    --qtml--bg: #171717;
-    --qtml--bg-secondary: #111111;
+    --qtml--bg: #111111;
+    --qtml--bg-secondary: #131313;
     --qtml--color: #ffffff;
     --qtml--color-secondary: #dddddd;
     --qtml--outline-color: #404040;
@@ -108,14 +109,6 @@ body {
     font-size: var(--qtml--font-size);}
 i {
     font-size: var(--qtml--icon-size);}
-a {
-    text-decoration: none;
-    color: var(--qtml--accent);
-    transition:var(--qtml--transition);
-}
-a:hover {
-    color: var(--qtml--accent-hover);
-    transition:var(--qtml--transition);}
 footer {
     position: fixed;
     bottom: 0;
@@ -134,6 +127,8 @@ footer {
     -webkit-text-fill-color: transparent;}
 .glow {
     text-shadow: 0 0 8px var(--qtml--accent);}
+.glow-hover:hover {
+    text-shadow: 0 0 8px var(--qtml--accent-hover);}
 .drop-shadow {
     filter: drop-shadow(2px 2px var(--qtml--accent));
 }
@@ -206,13 +201,29 @@ span.primary {
 span.secondary {
     color: var(--qtml--shadetext);
     transition: var(--qtml--transition);}
-span.hover:hover {
-    color: var(--qtml--color);
-    transition: var(--qtml--transition);}
 i.primary {
     color: var(--qtml--accent);}
 i.secondary {
     color: var(--qtml--shadetext);}
+a.primary {
+    text-decoration: none;
+    color: var(--qtml--accent);
+    transition:var(--qtml--transition);
+}
+a.primary:hover {
+    color: var(--qtml--accent-hover);
+    transition:var(--qtml--transition);}
+a.secondary {
+    color: var(--qtml--color);
+    background-color: var(--qtml--accent);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 2px 2px;
+    white-space: nowrap;
+    transition:var(--qtml--transition);}
+a.secondary:hover {
+    background-color: var(--qtml--accent-hover);
+    transition:var(--qtml--transition);}
 .container {
     background-color: var(--qtml--bg-secondary);
     border: var(--qtml--outline);
@@ -239,6 +250,9 @@ i.secondary {
     font-size: 2.5rem;}
 .scale {
     transform: scale(var(--qtml--scale));}
+.scale-hover:hover {
+    transform: scale(var(--qtml--scale));
+}
 .in-flex {
     display: inline-flex;}
 .in-block {
@@ -294,6 +308,10 @@ i.secondary {
 
     button {
         transform: scale(var(--qtml--scale-mobile));
+    }
+
+    .scale-hover:hover {
+        transform: scale(var(--qtml-scale-default));
     }
 
 }
