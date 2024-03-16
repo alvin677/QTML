@@ -23,6 +23,7 @@
     --qtml--border-radius: 5px; /* default border radius */
     --qtml--line-height: 1.2;
     --qtml--transition: 0.3s;
+    --qtml--font-size: 24px;
 
     --qtml--shadetext: #71717a;
 }
@@ -99,7 +100,8 @@ body {
     background-color: var(--qtml--bg);
     font-family: var(--qtml--font);
     margin: var(--qtml--margin);
-    color: var(--qtml--color);}
+    color: var(--qtml--color);
+    font-size: var(--qtml--font-size);}
 i {
     font-size: var(--qtml--icon-size);}
 a {
@@ -228,7 +230,7 @@ i.secondary {
 .text-big {
     font-weight: 800;
     font-size: 2.25rem;}
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .text-big {
         font-weight: 800;
         font-size: 4.5rem;
