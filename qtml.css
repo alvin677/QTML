@@ -7,12 +7,24 @@
     --qtml--bg-secondary: #191919; /* secondary background color */
 
     --qtml--color: #ffffff; /* text color */
-    --qtml--color-secondary: #bbbbbb; /* secondary text color */
+    --qtml--color-secondary: #cccccc; /* secondary text color */
 
     --qtml--accent: #fff; /* accent color */
     --qtml--accent-hover: #fff; /* accent hover color */
-    
 
+    --qtml--outline: 2px solid;
+    --qtml--outline-color: #404040;
+    --qtml--outline-hover: #606060;
+    
+    --qtml--element-background: transparent;
+    --qtml--margin: 10px; /* default margin */
+    --qtml--padding: 10px 12px; /* default padding */
+    --qtml--icon-size: 12px;
+    --qtml--border-radius: 5px; /* default border radius */
+    --qtml--line-height: 1.2;
+    --qtml--transition: 0.3s;
+
+    --qtml--shadetext: #71717a;
 }
 
 /* Themes */
@@ -28,6 +40,55 @@
     --qtml--accent: #f56565;
     --qtml--accent-hover: #ef4444;
 }
+[qtml-theme="magenta"] {
+    --qtml--accent: #B983FF;
+    --qtml--accent-hover: #C48EFF;
+}
+[qtml-theme="yellow"] {
+    --qtml--accent: #facc15;
+    --qtml--accent-hover: #fbbf24;
+}
+[qtml-theme="blue"] {
+    --qtml--accent: #3b82f6;
+    --qtml--accent-hover: #2563eb;
+}
+[qtml-mode="light"] {
+    --qtml--bg: #ffffff;
+    --qtml--bg-secondary: #f9f9f9;
+    --qtml--color: #111111;
+    --qtml--color-secondary: #000000;
+    --qtml--outline-color: #dddddd;
+    --qtml--outline-hover: #bbbbbb;
+}
+[qtml-mode="dark"] {
+    --qtml--bg: #171717;
+    --qtml--bg-secondary: #111111;
+    --qtml--color: #ffffff;
+    --qtml--color-secondary: #dddddd;
+    --qtml--outline-color: #404040;
+    --qtml--outline-hover: #606060;
+}
+
+/* color palette */
+.purple {
+    color: hsl(261deg 80% 48%);
+}
+.cyan {
+    color: #3df2ad;
+}
+.red {
+    color: #f56565;
+}
+.magenta {
+    color: #B983FF;
+}
+.yellow {
+    color: #facc15;
+}
+.blue {
+    color: #3b82f6;
+}
+
 
 /* Reset */
 * {
@@ -36,63 +97,154 @@
     box-sizing: border-box;}
 body {
     background-color: var(--qtml--bg);
-    font-family: var(--qtml--font)}
-p {
+    font-family: var(--qtml--font);
+    margin: var(--qtml--margin);
     color: var(--qtml--color);}
-
+i {
+    font-size: var(--qtml--icon-size);}
+a {
+    text-decoration: none;
+    color: var(--qtml--accent);
+    transition:var(--qtml--transition);
+}
+a:hover {
+    color: var(--qtml--accent-hover);
+    transition:var(--qtml--transition);}
 /* Utilities */
 .gradient {
-    background: -webkit-linear-gradient(45deg, var(--qtml--accent), #ffffff 80%);
+    background: -webkit-linear-gradient(45deg, var(--qtml--accent), var(--qtml--color) 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
 .reverse-gradient {
-    background: -webkit-linear-gradient(45deg, #ffffff, var(--qtml--accent) 80%);
+    background: -webkit-linear-gradient(45deg, var(--qtml--color), var(--qtml--accent) 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
-
+.glow {
+    text-shadow: 0 0 8px var(--qtml--accent);}
+.drop-shadow {
+    filter: drop-shadow(2px 2px var(--qtml--accent));
+}
 /* Components */
 button.primary {
-    border-radius:10px;
-    background:#111;
+    border-radius: var(--qtml--border-radius);
+    background: var(--qtml--element-background);
     border:none;
-    transition:0.3s;
-    padding: 6px 12px;
+    transition:var(--qtml--transition);
+    padding: var(--qtml--padding);
     color: var(--qtml--color-secondary);
     font-weight: bold;
-    letter-spacing: 0.5px;}
+    letter-spacing: 0.5px;
+    border: var(--qtml--outline);
+    border-color: var(--qtml--outline-color);}
 button.primary:hover {
     box-shadow:0 0 10px var(--qtml--accent);
     background:var(--qtml--accent-hover);
-    border-radius:6px;
-    transition:0.3s;
-    color:black;
-    cursor:pointer;}
+    transition:var(--qtml--transition);
+    color:var(--qtml--bg);
+    cursor:pointer;
+    border: var(--qtml--outline);
+    border-color: var(--qtml--accent-hover);}
+button.primary:active {
+    transform: scale(0.95);
+    transition:var(--qtml--transition);}
+input.primary {
+    background: var(--qtml--element-background);
+    border: var(--qtml--outline);
+    border-color: var(--qtml--outline-color);
+    color:var(--qtml--color-secondary);
+    border-radius: var(--qtml--border-radius);
+    padding: var(--qtml--padding);
+    transition: var(--qtml--transition);}  
+input.primary:hover {
+    border-color: var(--qtml--outline-hover);
+    transition: var(--qtml--transition);}
+input.primary:hover::placeholder {
+    color:var(--qtml--accent);
+    transition:var(--qtml--transition);}
+input.primary::placeholder {
+    transition:var(--qtml--transition);}
+input:focus{
+    outline: none;}
+span.primary {
+    color: var(--qtml--accent);
+    letter-spacing: 1px;
+    transition: var(--qtml--transition);}
+span.secondary {
+    color: var(--qtml--shadetext);
+    transition: var(--qtml--transition);}
+span.hover:hover {
+    color: var(--qtml--color);
+    transition: var(--qtml--transition);}
+i.primary {
+    color: var(--qtml--accent);}
+i.secondary {
+    color: var(--qtml--shadetext);}
 .container {
     background-color: var(--qtml--bg-secondary);
-    border: 2px solid #202020;
-    border-radius: 20px;
-    height: auto;
-    transition: 0.2s;
-    display: inline-block;}
+    border: var(--qtml--outline);
+    border-color: var(--qtml--outline-color);
+    border-radius: var(--qtml--border-radius);
+    transition:var(--qtml--transition);
+    display: inline-block;
+    padding: var(--qtml--padding);
+    vertical-align: middle;
+    line-height: var(--qtml--line-height);}
 .container:hover {
-    border: 2px solid #303030;}
-.font-sans {
+    border-color: var(--qtml--outline-hover);}
+.text-sans {
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
-.font-serif {
+.text-serif {
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;}
-.font-mono {
+.text-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
-.big-text {
+.text-big {
     font-weight: 800;
     font-size: 2.25rem;}
-.flex {
-    display: inline-flex;}
-.block {
-    display: inline-block;}
-
 @media (min-width: 768px) {
-    .big-text {
+    .text-big {
         font-weight: 800;
         font-size: 4.5rem;
     }
+}
+.in-flex {
+    display: inline-flex;}
+.in-block {
+    display: inline-block;}
+.flex {
+    display:flex; align-items:center;}
+.block {
+    display:block;}
+.bold {
+    font-weight: 700;}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+.text-center {
+    text-align:center;}
+.text-right {
+    text-align:right;}
+.text-left {
+    text-align:left;}
+.transparent {
+    background-color: transparent;}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;}
+.pointer {
+    cursor:pointer;}
+.pulse {
+    transition:var(--qtml--transition);
+    animation:pulse_anim;
+    animation-duration:4s;
+    animation-iteration-count:infinite;}
+@keyframes pulse_anim {
+    0% { color: var(--qtml--color); }
+    50% { color: var(--qtml--accent); text-shadow: var(--qtml--accent) 1px 0 10px; }
+    100% { color: var(--qtml--color); }
 }
