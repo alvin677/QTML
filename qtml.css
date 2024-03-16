@@ -19,11 +19,15 @@
     --qtml--element-background: transparent;
     --qtml--margin: 10px; /* default margin */
     --qtml--padding: 10px 12px; /* default padding */
-    --qtml--icon-size: 12px;
     --qtml--border-radius: 5px; /* default border radius */
     --qtml--line-height: 1.2;
     --qtml--transition: 0.3s;
+
+    --qtml--icon-size: 12px;
     --qtml--font-size: 24px;
+    --qtml--font-size-mobile: 16px;
+    --qtml--scale: 1.2;
+    --qtml--scale-mobile: 0.8;
 
     --qtml--shadetext: #71717a;
 }
@@ -229,13 +233,9 @@ i.secondary {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
 .text-big {
     font-weight: 800;
-    font-size: 2.25rem;}
-@media (min-width: 900px) {
-    .text-big {
-        font-weight: 800;
-        font-size: 4.5rem;
-    }
-}
+    font-size: 4.5rem;}
+.scale {
+    transform: scale(var(--qtml--scale));}
 .in-flex {
     display: inline-flex;}
 .in-block {
@@ -276,4 +276,21 @@ i.secondary {
 @keyframes pulse_anim {
     0%, 100% { color: var(--qtml--color); }
     50% { color: var(--qtml--accent); text-shadow: var(--qtml--accent) 1px 0 10px; }
+}
+
+/* mobile */
+@media (max-width: 900px) {
+    .text-big {
+        font-weight: 800;
+        font-size: 2.25rem;
+    }
+
+    body {
+        font-size: var(--qtml--font-size-mobile);
+    }
+
+    button {
+        transform: scale(var(--qtml--scale-mobile));
+    }
+
 }
