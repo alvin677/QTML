@@ -234,6 +234,9 @@ i.secondary {
 .text-big {
     font-weight: 800;
     font-size: 4.5rem;}
+.text-header {
+    font-weight: 650;
+    font-size: 2.5rem;}
 .scale {
     transform: scale(var(--qtml--scale));}
 .in-flex {
