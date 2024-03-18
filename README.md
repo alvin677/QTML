@@ -6,6 +6,6 @@ An HTML framework to simplify web design.<br/>
 Can be used to quickly design simple websites.
 
 # to be added
-status, NEW thing, no-border, slide animations?, fixed position uis, gradient on buttons?, custom scrollbar, alert boxes (information, warnings), text boxes
-black & white theme, simplified class for elements (no shadowing, no animations), info boxes that appear when hovering over something, 
+slide animations?, fixed position uis, gradient on buttons?, custom scrollbar
+black white gray theme, simplified class for elements (no shadowing, no animations), info boxes that appear when hovering over something, 
 sharp & round class to remove or add border-radius, 
