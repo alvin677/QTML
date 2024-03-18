@@ -144,10 +144,14 @@ hr {
     background: -webkit-linear-gradient(45deg, var(--qtml--color), var(--qtml--accent) 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
-.glow {
+.text-glow {
     text-shadow: 0 0 8px var(--qtml--accent);}
-.glow-hover:hover {
+.text-glow-hover:hover {
     text-shadow: 0 0 8px var(--qtml--accent-hover);}
+.glow {
+    box-shadow: 0 0 8px var(--qtml--accent);}
+.glow-hover {
+    box-shadow: 0 0 8px var(--qtml--accent-hover);}
 .drop-shadow {
     filter: drop-shadow(2px 2px var(--qtml--accent-hover));
 }
@@ -329,6 +333,8 @@ iframe.primary {
     height:100%;
     width:100%;
 }
+.auto-w{width:100%;}
+.auto-h{height:100%;}
 
 /* animations */
 hr.pulse {
