@@ -28,6 +28,7 @@
     --qtml--button-font-size: 2vh;
     --qtml--font-size-mobile: 16px;
     --qtml--scale: 1.2;
+    --qtml--round: 10px;
 
     --qtml--shadetext: #71717a; /* secondary span */
     --qtml--text-big: 9vh;
@@ -73,6 +74,31 @@
     --qtml--background: #1e3a8a;
     --qtml--background-hover: #2548a7;
 }
+[qtml-theme="burple"] {
+    --qtml--accent: #5865f2;
+    --qtml--accent-hover: #4758c8;
+    --qtml--background: #2f3136;
+    --qtml--background-hover: #36393f;
+
+}
+[qtml-theme="white"] {
+    --qtml--accent: #ffffff;
+    --qtml--accent-hover: #ffffff;
+    --qtml--background: #ffffff;
+    --qtml--background-hover: #ffffff;
+}
+[qtml-theme="black"] {
+    --qtml--accent: #000000;
+    --qtml--accent-hover: #000000;
+    --qtml--background: #000000;
+    --qtml--background-hover: #000000;
+}
+[qtml-theme="gray"] {
+    --qtml--accent: #71717a;
+    --qtml--accent-hover: #71717a;
+    --qtml--background: #f9f9f9;
+    --qtml--background-hover: #f9f9f9;
+}
 [qtml-mode="light"] {
     --qtml--bg: #ffffff;
     --qtml--bg-secondary: #f9f9f9;
@@ -80,6 +106,11 @@
     --qtml--color-secondary: #000000;
     --qtml--outline-color: #dddddd;
     --qtml--outline-hover: #bbbbbb;
+
+    --qtml--success-bg: #96DED1;
+    --qtml--notify-bg: 	#CCCCFF;
+    --qtml--error-bg: #ffb1b1;
+    --qtml--warning-bg: #fff1b8;
 }
 [qtml-mode="dark"] {
     --qtml--bg: #111111;
@@ -88,27 +119,31 @@
     --qtml--color-secondary: #cccccc;
     --qtml--outline-color: #404040;
     --qtml--outline-hover: #606060;
+
+    --qtml--success-bg: #051b11;
+    --qtml--notify-bg: #0c0c39;
+    --qtml--error-bg: #381818;
+    --qtml--warning-bg: #69560a;
 }
 
 /* color palette */
-.purple {
-    color: #5d18dc;
-}
-.cyan {
-    color: #3df2ad;
-}
-.red {
-    color: #f56565;
-}
-.magenta {
-    color: #B983FF;
-}
-.yellow {
-    color: #facc15;
-}
-.blue {
-    color: #3b82f6;
-}
+.purple {color: #5d18dc !important;}
+.cyan {color: #3df2ad !important;}
+.red {color: #f56565 !important;}
+.magenta {color: #B983FF !important;}
+.yellow {color: #facc15 !important;}
+.blue {color: #3b82f6 !important;}
+.burple {color: #5865f2 !important;}
+.gray {color: #71717a !important;}
+
+.purple-bg {background-color: #5d18dc !important;}
+.cyan-bg {background-color: #3df2ad !important;}
+.red-bg {background-color: #f56565 !important;}
+.magenta-bg {background-color: #B983FF !important;}
+.yellow-bg {background-color: #facc15 !important;}
+.blue-bg {background-color: #3b82f6 !important;}
+.burple-bg {background-color: #5865f2 !important;}
+.gray-bg {background-color: #71717a !important;}
 
 
 /* Reset */
@@ -138,10 +173,12 @@ hr {
 /* Utilities */
 .gradient {
     background: -webkit-linear-gradient(45deg, var(--qtml--accent), var(--qtml--color) 80%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
 .reverse-gradient {
     background: -webkit-linear-gradient(45deg, var(--qtml--color), var(--qtml--accent) 80%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
 .text-glow {
@@ -159,7 +196,6 @@ hr {
 button.primary {
     border-radius: var(--qtml--border-radius);
     background: var(--qtml--element-background);
-    border:none;
     transition:var(--qtml--transition);
     padding: var(--qtml--padding);
     color: var(--qtml--color-secondary);
@@ -176,6 +212,13 @@ button.primary:hover {
     cursor:pointer;
     border: var(--qtml--outline);
     border-color: var(--qtml--accent);}
+button.primary.active {
+    box-shadow:0 0 10px var(--qtml--accent);
+    background:var(--qtml--accent);
+    color:var(--qtml--bg);
+    border: var(--qtml--outline);
+    border-color: var(--qtml--accent);
+}
 button.primary:active {
     transform: scale(0.95);
     transition:var(--qtml--transition);}
@@ -193,6 +236,12 @@ button.secondary:hover {
     color: var(--qtml--bg);
     box-shadow: var(--qtml--accent) 0px 7px 29px 0px;
     cursor:pointer;}
+button.secondary.active {
+    letter-spacing: 3px;
+    background-color: var(--qtml--accent);
+    color: var(--qtml--bg);
+    box-shadow: var(--qtml--accent) 0px 7px 29px 0px;
+}
 button.secondary:active {
     letter-spacing: 3px;
     background-color: var(--qtml--accent);
@@ -200,6 +249,17 @@ button.secondary:active {
     box-shadow: var(--qtml--accent) 0px 0px 0px 0px;
     transform: translateY(4px);
     transition: 100ms;}
+button.simple {
+    padding: var(--qtml--padding);
+    border-radius: var(--qtml--border-radius);
+    border: 0;
+    background: var(--qtml--accent);
+    color: var(--qtml--color);
+    letter-spacing: 0.5px;
+    transition: all .5s ease;}
+button.simple:hover {
+    cursor: pointer;
+    background: var(--qtml--accent-hover);}
 input.primary {
     background: var(--qtml--element-background);
     border: var(--qtml--outline);
@@ -225,6 +285,36 @@ span.primary {
 span.secondary {
     color: var(--qtml--shadetext);
     transition: var(--qtml--transition);}
+span.status {
+    background-color: var(--qtml--accent);
+    border-radius:2px;
+    padding:2px 4px;
+    font-weight:650;
+    color: var(--qtml--bg);}
+span.success {
+    background-color: var(--qtml--success-bg);
+    border: 1px solid #2b8c64;
+    color: #2fbf83;
+    padding: 2px 4px;
+    border-radius:4px;}
+span.notify { 
+    background-color:  var(--qtml--notify-bg);
+    border: 1px solid  #416aff;
+    color: 	#3863ff;
+    padding: 2px 4px;
+    border-radius:4px;}
+span.error {
+    background-color: var(--qtml--error-bg);
+    border: 1px solid #f56565;
+    color: 	#e35858;
+    padding: 2px 4px;
+    border-radius:4px;}
+span.warning {
+    background-color: var(--qtml--warning-bg);
+    border: 1px solid #facc15;
+    color: 	#fccb06;
+    padding: 2px 4px;
+    border-radius:4px;}
 i.primary {
     color: var(--qtml--accent);}
 i.secondary {
@@ -280,6 +370,10 @@ iframe.primary {
 .text-header {
     font-weight: 650;
     font-size: var(--qtml--text-header);}
+.sharp {
+    border-radius:0px !important;}
+.round {
+    border-radius: var(--qtml--round) !important;}
 .scale {
     transform: scale(var(--qtml--scale));}
 .scale-hover:hover {
@@ -292,6 +386,10 @@ iframe.primary {
     display:flex; align-items:center;}
 .block {
     display:block;}
+.grid {
+    display:grid;}
+.hide {
+    display:none;}
 .column {
     flex-direction:column;}
 .row {
@@ -322,6 +420,8 @@ iframe.primary {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;}
+.noborder {
+    border:none !important;}
 .pointer {
     cursor:pointer;}
 .pulse {
