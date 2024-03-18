@@ -1,7 +1,7 @@
 /* QTML Stylesheet - @cedric0591 on Discord */
 
-:root { /* default variables */
-    --qtml--font: 'Arial', sans-serif; /* font */
+:root {
+    --qtml--font: 'Arial', sans-serif;
 
     --qtml--bg: #161616; /* background color */
     --qtml--bg-secondary: #191919; /* secondary background color */
@@ -17,46 +17,61 @@
     --qtml--outline-hover: #606060;
     
     --qtml--element-background: transparent;
-    --qtml--margin: 10px; /* default margin */
-    --qtml--padding: 10px 12px; /* default padding */
-    --qtml--border-radius: 5px; /* default border radius */
+    --qtml--margin: 10px;
+    --qtml--padding: 1.5vh 2.5vh;
+    --qtml--border-radius: 5px;
     --qtml--line-height: 1.2;
     --qtml--transition: 0.3s;
 
     --qtml--icon-size: 12px;
-    --qtml--font-size: 24px;
+    --qtml--font-size: 3vh;
+    --qtml--button-font-size: 2vh;
     --qtml--font-size-mobile: 16px;
     --qtml--scale: 1.2;
-    --qtml--scale-mobile: 0.8;
-    --qtml--scale-default: 1;
 
-    --qtml--shadetext: #71717a;
+    --qtml--shadetext: #71717a; /* secondary span */
+    --qtml--text-big: 9vh;
+    --qtml--text-header: 5vh;
+    --qtml--fade-speed: 3s;
+    --qtml--animation-speed: 1s;
 }
 
 /* Themes */
 [qtml-theme="purple"] {
-    --qtml--accent: hsl(261deg 80% 48%);
-    --qtml--accent-hover: hsl(261deg 80% 50%);
+    --qtml--accent: #5d18dc;
+    --qtml--accent-hover: #6119e6;
+    --qtml--background: #391084;
+    --qtml--background-hover: rgb(65, 18, 144);
 }
 [qtml-theme="cyan"] {
     --qtml--accent: #3df2ad;
     --qtml--accent-hover: #4df2ad;
+    --qtml--background: #247151;
+    --qtml--background-hover: #3a9768;
 }
 [qtml-theme="red"] {
     --qtml--accent: #f56565;
     --qtml--accent-hover: #ef4444;
+    --qtml--background: #7f1d1d;
+    --qtml--background-hover: #902020;
 }
 [qtml-theme="magenta"] {
     --qtml--accent: #B983FF;
     --qtml--accent-hover: #C48EFF;
+    --qtml--background: #4C1D95;
+    --qtml--background-hover: #5a22ad;
 }
 [qtml-theme="yellow"] {
     --qtml--accent: #facc15;
     --qtml--accent-hover: #fbbf24;
+    --qtml--background: #7f5f00;
+    --qtml--background-hover: #8f6f00; /* a little brighter */ 
 }
 [qtml-theme="blue"] {
     --qtml--accent: #3b82f6;
     --qtml--accent-hover: #2563eb;
+    --qtml--background: #1e3a8a;
+    --qtml--background-hover: #2548a7;
 }
 [qtml-mode="light"] {
     --qtml--bg: #ffffff;
@@ -77,7 +92,7 @@
 
 /* color palette */
 .purple {
-    color: hsl(261deg 80% 48%);
+    color: #5d18dc;
 }
 .cyan {
     color: #3df2ad;
@@ -147,7 +162,8 @@ button.primary {
     font-weight: bold;
     letter-spacing: 0.5px;
     border: var(--qtml--outline);
-    border-color: var(--qtml--outline-color);}
+    border-color: var(--qtml--outline-color);
+    font-size: var(--qtml--button-font-size)}
 button.primary:hover {
     box-shadow:0 0 10px var(--qtml--accent);
     background:var(--qtml--accent);
@@ -220,15 +236,15 @@ a.primary:hover {
     color: var(--qtml--accent-hover);
     transition:var(--qtml--transition);}
 a.secondary {
-    color: var(--qtml--color);
-    background-color: var(--qtml--accent);
+    color: var(--qtml--accent);
+    background-color: var(--qtml--background);
     text-decoration: none;
     border-radius: 4px;
     padding: 2px 2px;
     white-space: nowrap;
     transition:var(--qtml--transition);}
 a.secondary:hover {
-    background-color: var(--qtml--accent-hover);
+    background-color: var(--qtml--background-hover);
     transition:var(--qtml--transition);}
 div.outline {
     border: var(--qtml--outline);
@@ -256,10 +272,10 @@ iframe.primary {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
 .text-big {
     font-weight: 800;
-    font-size: 4.5rem;}
+    font-size: var(--qtml--text-big);}
 .text-header {
     font-weight: 650;
-    font-size: 2.5rem;}
+    font-size: var(--qtml--text-header);}
 .scale {
     transform: scale(var(--qtml--scale));}
 .scale-hover:hover {
@@ -314,6 +330,8 @@ iframe.primary {
     height:100%;
     width:100%;
 }
+
+/* animations */
 hr.pulse {
     transition:var(--qtml--transition);
     animation:pulse_anim_bg;
@@ -328,22 +346,54 @@ hr.pulse {
     50% { background-color: var(--qtml--accent); text-shadow: var(--qtml--accent) 1px 0 10px; }
 }
 
+@keyframes fade-out {
+    from {opacity: 1}
+    to {opacity: 0}    
+}
+
+@keyframes fade-in {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes shrink {
+    from {transform: scale(1)}
+    to {transform: scale(0)}    
+}
+
+@keyframes grow {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+.fade-in {
+    animation:fade-in;
+    animation-duration: var(--qtml--fade-speed);
+    animation-fill-mode:forwards;
+}
+
+.fade-out {
+    animation:fade-out;
+    animation-duration: var(--qtml--fade-speed);
+    animation-fill-mode:forwards;
+}
+
+.shrink {
+    animation:shrink;
+    animation-duration: var(--qtml--animation-speed);
+    animation-fill-mode:forwards;
+}
+
+.grow {
+    animation:grow;
+    animation-duration: var(--qtml--animation-speed);
+    animation-fill-mode:forwards;
+}
+
 /* mobile */
 @media (max-width: 900px) {
     .text-big {
         font-weight: 800;
-        font-size: 2.25rem;
-    }
-
-    body {
-        font-size: var(--qtml--font-size-mobile);
-    }
-
-    button {
-        transform: scale(var(--qtml--scale-mobile));
-    }
-
-    .scale-hover:hover {
-        transform: scale(var(--qtml-scale-default));
+        font-size: 4.5vh;
     }
 }
