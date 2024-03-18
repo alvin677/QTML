@@ -279,8 +279,7 @@ iframe.primary {
 .scale {
     transform: scale(var(--qtml--scale));}
 .scale-hover:hover {
-    transform: scale(var(--qtml--scale));
-}
+    transform: scale(var(--qtml--scale));}
 .in-flex {
     display: inline-flex;}
 .in-block {
@@ -387,7 +386,6 @@ hr.pulse {
 .grow {
     animation:grow;
     animation-duration: var(--qtml--animation-speed);
-    animation-fill-mode:forwards;
 }
 
 /* mobile */
