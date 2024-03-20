@@ -343,18 +343,14 @@ span.warning {
     color: 	#fccb06;
     padding: 2px 4px;
     border-radius:4px;}
-span.large {
+span.large, i.large, button.large, input.large{
     font-size:5vh !important;}
-span.small {
+span.small, i.small, button.small, input.small {
     font-size:2vh !important;}
 i.primary {
     color: var(--qtml--accent);}
 i.secondary {
     color: var(--qtml--shadetext);}
-i.large {
-    font-size:5vh !important;}
-i.small {
-    font-size:2vh !important;}
 a.primary {
     text-decoration: none;
     color: var(--qtml--accent);
