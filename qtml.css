@@ -22,8 +22,9 @@
     --qtml--border-radius: 5px;
     --qtml--line-height: 1.2;
     --qtml--transition: 0.3s;
+    --qtml--gap: 6px;
 
-    --qtml--icon-size: 12px;
+    --qtml--icon-size: /*12px*/ 3vh;
     --qtml--font-size: 3vh;
     --qtml--button-font-size: 2vh;
     --qtml--font-size-mobile: 16px;
@@ -79,7 +80,12 @@
     --qtml--accent-hover: #4758c8;
     --qtml--background: #2f3136;
     --qtml--background-hover: #36393f;
-
+}
+[qtml-theme="aqua"] {
+    --qtml--accent: #00d4ff;
+    --qtml--accent-hover: #00aacc;
+    --qtml--background: #0f172a;
+    --qtml--background-hover: #1a2848;
 }
 [qtml-theme="white"] {
     --qtml--accent: #ffffff;
@@ -89,13 +95,19 @@
 }
 [qtml-theme="black"] {
     --qtml--accent: #000000;
-    --qtml--accent-hover: #000000;
+    --qtml--accent-hover: #1f1f1f;
     --qtml--background: #000000;
-    --qtml--background-hover: #000000;
+    --qtml--background-hover: #151515;
 }
 [qtml-theme="gray"] {
     --qtml--accent: #71717a;
-    --qtml--accent-hover: #71717a;
+    --qtml--accent-hover: #5c5c63;
+    --qtml--background: #f9f9f9;
+    --qtml--background-hover: #e3e3e3;
+}
+[qtml-theme="darkgray"] {
+    --qtml--accent: #38383d;
+    --qtml--accent-hover: #38383d;
     --qtml--background: #f9f9f9;
     --qtml--background-hover: #f9f9f9;
 }
@@ -135,6 +147,9 @@
 .blue {color: #3b82f6 !important;}
 .burple {color: #5865f2 !important;}
 .gray {color: #71717a !important;}
+.darkgray {color: #38383d !important;}
+.black {color: #000000 !important;}
+.white {color: #ffffff !important;}
 
 .purple-bg {background-color: #5d18dc !important;}
 .cyan-bg {background-color: #3df2ad !important;}
@@ -144,6 +159,9 @@
 .blue-bg {background-color: #3b82f6 !important;}
 .burple-bg {background-color: #5865f2 !important;}
 .gray-bg {background-color: #71717a !important;}
+.darkgray-bg {background-color: #38383d !important;}
+.black-bg {background-color: #000000 !important;}
+.white-bg {background-color: #ffffff !important;}
 
 
 /* Reset */
@@ -171,11 +189,16 @@ hr {
     border: none;
 }
 /* Utilities */
+.color {
+    color: var(--qtml--color) !important;}
 .gradient {
     background: -webkit-linear-gradient(45deg, var(--qtml--accent), var(--qtml--color) 80%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
+.gradient-bg {
+    background: var(--qtml--bg);
+    background: linear-gradient(90deg, var(--qtml--bg) 0%, var(--qtml--accent) 100%);}
 .reverse-gradient {
     background: -webkit-linear-gradient(45deg, var(--qtml--color), var(--qtml--accent) 80%);
     background-clip: text;
@@ -315,12 +338,18 @@ span.warning {
     color: 	#fccb06;
     padding: 2px 4px;
     border-radius:4px;}
+span.large {
+    font-size:5vh !important;}
+span.small {
+    font-size:2vh !important;}
 i.primary {
     color: var(--qtml--accent);}
 i.secondary {
     color: var(--qtml--shadetext);}
 i.large {
-    font-size:20px;}
+    font-size:5vh !important;}
+i.small {
+    font-size:2vh !important;}
 a.primary {
     text-decoration: none;
     color: var(--qtml--accent);
@@ -388,6 +417,20 @@ iframe.primary {
     display:block;}
 .grid {
     display:grid;}
+.wrap {
+    flex-wrap:wrap;}
+.gap {
+    gap:var(--qtml--gap);}
+.relative {
+    position:relative;}
+.absolute {
+    position:absolute;}
+.fixed {
+    position:fixed;}
+.invisible {
+    visibility:hidden;}
+.visible {
+    visibility:visible;}
 .hide {
     display:none;}
 .column {
@@ -395,7 +438,7 @@ iframe.primary {
 .row {
     flex-direction:row;}
 .bold {
-    font-weight: 700;}
+    font-weight: 700 !important;}
 .center {
     position: absolute;
     top: 50%;
