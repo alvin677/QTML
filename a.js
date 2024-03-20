@@ -56,7 +56,7 @@ window.onload = function() {
       window.addEventListener('resize', resizeEditor);
     
     let script_list = document.getElementById("script_list");
-    let script = `<div class="script"><img src ="script_image" /><button class="primary auto-w"><i class="fa-solid fa-play"></i><span> script_name</span></button></div>`;
+    let script = `<div class="script"><img src ="script_image" /><button class="primary auto-w"><i class="fa-solid fa-play small"></i><span> script_name</span></button></div>`;
     for (let i=0;i<scripts_prem.length;i++) {
         let new_script = script;
         new_script=new_script.replace("script_name", scripts_prem[i][0]);
