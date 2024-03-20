@@ -36,6 +36,7 @@
     --qtml--text-header: 5vh;
     --qtml--fade-speed: 3s;
     --qtml--animation-speed: 1s;
+    --qtml--gradient-animation-speed: 5s;
 }
 
 /* Themes */
@@ -88,16 +89,20 @@
     --qtml--background-hover: #1a2848;
 }
 [qtml-theme="white"] {
-    --qtml--accent: #ffffff;
-    --qtml--accent-hover: #ffffff;
+    --qtml--accent: #eeeeee;
+    --qtml--accent-hover: #dddddd;
     --qtml--background: #ffffff;
     --qtml--background-hover: #ffffff;
+
+    --qtml--color: #000000 !important;
 }
 [qtml-theme="black"] {
     --qtml--accent: #000000;
     --qtml--accent-hover: #1f1f1f;
     --qtml--background: #000000;
     --qtml--background-hover: #151515;
+
+    --qtml--color: #ffffff !important;
 }
 [qtml-theme="gray"] {
     --qtml--accent: #71717a;
@@ -193,9 +198,9 @@ hr {
     color: var(--qtml--color) !important;}
 .gradient {
     background: -webkit-linear-gradient(45deg, var(--qtml--accent), var(--qtml--color) 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;}
 .gradient-bg {
     background: var(--qtml--bg);
     background: linear-gradient(90deg, var(--qtml--bg) 0%, var(--qtml--accent) 100%);}
@@ -536,6 +541,56 @@ hr.pulse {
     animation:grow;
     animation-duration: var(--qtml--animation-speed);
 }
+
+@-webkit-keyframes gradient {
+    0% { background-position: 100% 50%; }
+    50% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+@-moz-keyframes gradient {
+    0% { background-position: 100% 50%; }
+    50% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+@keyframes gradient {
+    0% { background-position: 100% 50%; }
+    50% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+@-webkit-keyframes reverse-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes reverse-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes reverse-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.gradient.animate {
+    background: linear-gradient(270deg, var(--qtml--accent), var(--qtml--color));
+    background-size: 400% 400%;
+
+    -webkit-animation: gradient var(--qtml--gradient-animation-speed) ease infinite;
+    -moz-animation: gradient var(--qtml--gradient-animation-speed) ease infinite;
+    animation: gradient var(--qtml--gradient-animation-speed) ease infinite;
+}
+
+.reverse-gradient.animate {
+    background: linear-gradient(270deg, var(--qtml--accent), var(--qtml--color));
+    background-size: 400% 400%;
+
+    -webkit-animation: reverse-gradient var(--qtml--gradient-animation-speed) ease infinite;
+    -moz-animation: reverse-gradient var(--qtml--gradient-animation-speed) ease infinite;
+    animation: reverse-gradient var(--qtml--gradient-animation-speed) ease infinite;
+}
+
 
 /* mobile */
 @media (max-width: 900px) {
