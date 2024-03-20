@@ -13,6 +13,7 @@ var scripts_prem = [
 ];
 var scripts_premplus = {};
 
+// name, players, image, game id, server id
 var games = [["Ballsack", "100", ""], ["bussing", "12", ""]]
 
 function store_code() {
@@ -30,6 +31,11 @@ function resizeEditor() {
     var container = document.getElementById('editor');
     var rect = container.getBoundingClientRect();
     editor.layout({ width: rect.width, height: rect.height });
+}
+
+function joinRobloxGame(gameId, serverId) {
+    const url = `roblox://launch/game?placeId=${gameId}&serverId=${serverId}`;
+    window.location.href = url;
 }
 
 window.onload = function() {
@@ -65,12 +71,14 @@ window.onload = function() {
     }
 
     let game_list = document.getElementById("game_list");
-    let game = `<div class="script relative"><img src ="./img/0.png" /><span class = "status block absolute black-bg white small" style="opacity:0.8;bottom:0;width:100%;"><i class="fa-solid fa-user small middle"></i> game_playercount | game_name</span><button class="primary auto-w middle"><i class="fa-solid fa-play middle small"></i><span> Join Game</span></button></div>`;
+    let game = `<div class="script relative"><img src ="./img/0.png" /><span class = "status block absolute black-bg white small" style="opacity:0.8;bottom:0;width:100%;"><i class="fa-solid fa-user small middle"></i> game_playercount | game_name</span><button class="primary auto-w middle" onclick="joinRobloxGame('game_id', 'game_server_id')"><i class="fa-solid fa-play middle small"></i><span> Join Game</span></button></div>`;
     for (let i=0;i<games.length;i++) {
         let new_game = game;
         new_game=new_game.replace("game_name", games[i][0]);
         new_game=new_game.replace("game_playercount", games[i][1]);
         new_game=new_game.replace("game_image", games[i][2]);
+        new_game=new_game.replace("game_id", games[i][3]);
+        new_game=new_game.replace("game_server_id", games[i][4]);
         game_list.innerHTML += new_game;
     }
 }

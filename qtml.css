@@ -23,6 +23,7 @@
     --qtml--line-height: 1.2;
     --qtml--transition: 0.3s;
     --qtml--gap: 6px;
+    --qtml--letter-spacing: 1px;
 
     --qtml--icon-size: /*12px*/ 3vh;
     --qtml--font-size: 3vh;
@@ -184,6 +185,7 @@ i {
     font-size: var(--qtml--icon-size);}
 footer {
     position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
     padding: var(--qtml--padding);
@@ -218,8 +220,7 @@ hr {
 .glow-hover {
     box-shadow: 0 0 8px var(--qtml--accent-hover);}
 .drop-shadow {
-    filter: drop-shadow(2px 2px var(--qtml--accent-hover));
-}
+    filter: drop-shadow(2px 2px var(/*--qtml--accent-hover*/--qtml--background));}
 /* Components */
 button.primary {
     border-radius: var(--qtml--border-radius);
@@ -245,8 +246,7 @@ button.primary.active {
     background:var(--qtml--accent);
     color:var(--qtml--bg);
     border: var(--qtml--outline);
-    border-color: var(--qtml--accent);
-}
+    border-color: var(--qtml--accent);}
 button.primary:active {
     transform: scale(0.95);
     transition:var(--qtml--transition);}
@@ -292,10 +292,10 @@ input.primary {
     background: var(--qtml--element-background);
     border: var(--qtml--outline);
     border-color: var(--qtml--outline-color);
-    color:var(--qtml--color-secondary);
     border-radius: var(--qtml--border-radius);
     padding: var(--qtml--padding);
-    transition: var(--qtml--transition);}  
+    transition: var(--qtml--transition);
+    color:var(--qtml--color);}  
 input.primary:hover {
     border-color: var(--qtml--outline-hover);
     transition: var(--qtml--transition);}
@@ -400,6 +400,8 @@ iframe.primary {
 .text-header {
     font-weight: 650;
     font-size: var(--qtml--text-header);}
+.text-space {
+    letter-spacing: var(--qtml--letter-spacing);}
 .sharp {
     border-radius:0px !important;}
 .round {
@@ -445,6 +447,8 @@ iframe.primary {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);}
+.base {
+    vertical-align:baseline;}
 .middle {
     vertical-align:middle;}
 .top {
@@ -464,6 +468,15 @@ iframe.primary {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;}
+.select {
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;}
+.underline {
+    text-decoration:underline;}
 .noborder {
     border:none !important;}
 .pointer {
@@ -475,8 +488,7 @@ iframe.primary {
     animation-iteration-count:infinite;}
 .auto {
     height:100%;
-    width:100%;
-}
+    width:100%;}
 .auto-w{width:100%;}
 .auto-h{height:100%;}
 
