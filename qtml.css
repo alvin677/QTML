@@ -343,9 +343,9 @@ span.warning {
     color: 	#fccb06;
     padding: 2px 4px;
     border-radius:4px;}
-span.large, i.large, button.large, input.large{
+span.large, i.large, button.large, input.large, a.large{
     font-size:5vh !important;}
-span.small, i.small, button.small, input.small {
+span.small, i.small, button.small, input.small, a.small {
     font-size:2vh !important;}
 i.primary {
     color: var(--qtml--accent);}
