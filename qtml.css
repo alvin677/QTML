@@ -382,6 +382,10 @@ a.secondary:hover {
 div.outline {
     border: var(--qtml--outline);
     border-color: var(--qtml--accent);}
+div.border {
+    border: var(--qtml--outline);
+    border-color: var(--qtml--outline-color);
+    border-radius: var(--qtml--border-radius);}
 iframe.primary {
     border-radius: var(--qtml--border-radius);
 }
