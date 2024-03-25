@@ -38,6 +38,8 @@
     --qtml--fade-speed: 3s;
     --qtml--animation-speed: 1s;
     --qtml--gradient-animation-speed: 5s;
+
+    --qtml--scrollbar-background: transparent;
 }
 
 /* Themes */
@@ -175,6 +177,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;}
+
+::-webkit-scrollbar{width:0.5vw}
+::-webkit-scrollbar-track{background:var(--qtml--scrollbar-background);}
+::-webkit-scrollbar-thumb{background:var(--qtml--color);border-radius:3px;}
+::-webkit-scrollbar-thumb:hover{background:var(--qtml--accent);}
+
 body {
     background-color: var(--qtml--bg);
     font-family: var(--qtml--font);
