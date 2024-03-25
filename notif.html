@@ -1,0 +1,17 @@
+<html>
+    <style>
+        #notification {
+            position:fixed; 
+            bottom:0; 
+            right: -100%;
+            transition:1s;
+            max-width:100%;
+        }
+    </style>
+    <body>
+        <div id="notification">New Notification!</div>
+        <script>
+            setTimeout(() => {document.getElementById("notification").style.right = 0;},1000)
+        </script>
+    </body>
+</html>
