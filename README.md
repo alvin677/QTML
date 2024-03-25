@@ -7,4 +7,3 @@ Can be used to quickly design simple websites.
 
 # to be added
 fixed position uis, gradient on buttons?
-info boxes that appear when hovering over something, 
