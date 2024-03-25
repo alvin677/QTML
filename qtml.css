@@ -388,6 +388,12 @@ iframe.primary {
     line-height: var(--qtml--line-height);}
 .container:hover {
     border-color: var(--qtml--outline-hover);}
+.div.notification {
+    position:fixed; 
+    bottom:0; 
+    right: -100%;
+    transition:1s;
+    max-width:100%;}
 .text-sans {
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
 .text-serif {
