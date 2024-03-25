@@ -6,5 +6,5 @@ An HTML framework to simplify web design.<br/>
 Can be used to quickly design simple websites.
 
 # to be added
-slide animations?, fixed position uis, gradient on buttons?, custom scrollbar
+fixed position uis, gradient on buttons?, custom scrollbar
 info boxes that appear when hovering over something, 
