@@ -197,7 +197,8 @@ footer {
     bottom: 0;
     width: 100%;
     padding: var(--qtml--padding);
-    text-align: center;}
+    text-align: center;
+    z-index:998;}
 hr {
     background-color: var(--qtml--accent);
     height: 1px;
@@ -401,7 +402,8 @@ div.notification {
     bottom:0; 
     right: -100%;
     transition:1s;
-    max-width:100%;}
+    max-width:100%;
+    z-index:999;}
 .text-sans {
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
 .text-serif {
