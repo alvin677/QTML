@@ -396,7 +396,7 @@ iframe.primary {
     line-height: var(--qtml--line-height);}
 .container:hover {
     border-color: var(--qtml--outline-hover);}
-.div.notification {
+div.notification {
     position:fixed; 
     bottom:0; 
     right: -100%;
