@@ -6,4 +6,4 @@ An HTML framework to simplify web design.<br/>
 Can be used to quickly design simple websites.
 
 # to be added
-fixed position uis, gradient on buttons?
+fixed position ui templates, gradient on buttons?
