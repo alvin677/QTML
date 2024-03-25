@@ -7,4 +7,4 @@ Can be used to quickly design simple websites.
 
 # to be added
 slide animations?, fixed position uis, gradient on buttons?, custom scrollbar
-simplified class for elements (no shadowing, no animations), info boxes that appear when hovering over something, 
+info boxes that appear when hovering over something, 
