@@ -4,7 +4,7 @@
 [Template HTML File](https://github.com/alvin677/QTML/blob/main/template.html) *start with this file*<br/>
 [FontAwesome](https://fontawesome.com/) *cool icons*<br/>
 
-**Made with QTML**<br/>
+**Made with QTML** `CTRL+U` *to view source code on the website*<br/>
 [Cofs.fun](https://cofs.pkings.net) *roblox related website*
 <br/>
 # Documentation
