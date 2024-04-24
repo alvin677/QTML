@@ -212,8 +212,9 @@ footer {
     bottom: 0;
     width: 100%;
     padding: var(--qtml--padding);
-    text-align: center;
     z-index:998;}
+footer.center {
+    text-align: center;}
 hr {
     background-color: var(--qtml--accent);
     height: 1px;
