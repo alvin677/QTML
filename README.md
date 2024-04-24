@@ -16,3 +16,46 @@ List of elements that support one or more of the classes:<br/>`button` `a` `span
 
 **Theme Modes**<br/>
 `light` `dark`
+
+**Color Palette**<br/>
+```
+/* color palette */
+.purple
+.cyan
+.red
+.magenta
+.yellow
+.blue
+.burple
+.gray
+.darkgray
+.black
+.white
+.accent
+
+.purple-bg
+.cyan-bg
+.red-bg
+.magenta-bg
+.yellow-bg
+.blue-bg
+.burple-bg
+.gray-bg
+.darkgray-bg
+.black-bg
+.white-bg
+.accent-bg
+
+.purple-border
+.cyan-border
+.red-border
+.magenta-border
+.yellow-border
+.blue-border
+.burple-border
+.gray-border
+.darkgray-border 
+.black-border
+.white-border
+.accent-border
+```
