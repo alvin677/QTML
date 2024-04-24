@@ -8,6 +8,8 @@ Can be used to quickly design simple websites.
 [Template HTML File](https://github.com/alvin677/QTML/blob/main/template.html)<br/>
 [FontAwesome](https://fontawesome.com/)
 
+**QTML** uses pre-made classes to simplify the development of web pages.
+
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
 
@@ -19,43 +21,42 @@ List of elements that support one or more of the classes:<br/>`button` `a` `span
 
 **Color Palette**<br/>
 ```
-/* color palette */
-.purple
-.cyan
-.red
-.magenta
-.yellow
-.blue
-.burple
-.gray
-.darkgray
-.black
-.white
-.accent
+purple
+cyan
+red
+magenta
+yellow
+blue
+burple
+gray
+darkgray
+black
+white
+accent
 
-.purple-bg
-.cyan-bg
-.red-bg
-.magenta-bg
-.yellow-bg
-.blue-bg
-.burple-bg
-.gray-bg
-.darkgray-bg
-.black-bg
-.white-bg
-.accent-bg
+purple-bg
+cyan-bg
+red-bg
+magenta-bg
+yellow-bg
+blue-bg
+burple-bg
+gray-bg
+darkgray-bg
+black-bg
+white-bg
+accent-bg
 
-.purple-border
-.cyan-border
-.red-border
-.magenta-border
-.yellow-border
-.blue-border
-.burple-border
-.gray-border
-.darkgray-border 
-.black-border
-.white-border
-.accent-border
+purple-border
+cyan-border
+red-border
+magenta-border
+yellow-border
+blue-border
+burple-border
+gray-border
+darkgray-border 
+black-border
+white-border
+accent-border
 ```
