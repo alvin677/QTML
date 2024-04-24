@@ -33,7 +33,9 @@ darkgray
 black
 white
 accent
-
+```
+**Background Colors**<br/>
+```
 purple-bg
 cyan-bg
 red-bg
@@ -46,7 +48,9 @@ darkgray-bg
 black-bg
 white-bg
 accent-bg
-
+```
+**Border Colors**<br/>
+```
 purple-border
 cyan-border
 red-border
