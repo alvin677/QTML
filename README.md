@@ -5,7 +5,7 @@
 [FontAwesome](https://fontawesome.com/) *cool icons*<br/>
 
 **Made with QTML**<br/>
-[Cofs.fun](https://cofs.pkings.net)
+[Cofs.fun](https://cofs.pkings.net) *roblox related website*
 <br/>
 # Documentation
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
