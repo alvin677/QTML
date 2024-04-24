@@ -19,7 +19,7 @@ List of elements that support one or more of the classes:<br/>`button` `a` `span
 **Theme Modes**<br/>
 `light` `dark`
 
-**Color Palette**<br/>
+**Color Palette** (classes)<br/>
 ```
 purple
 cyan
@@ -34,7 +34,7 @@ black
 white
 accent
 ```
-**Background Colors**<br/>
+**Background Colors** (classes)<br/>
 ```
 purple-bg
 cyan-bg
@@ -49,7 +49,7 @@ black-bg
 white-bg
 accent-bg
 ```
-**Border Colors**<br/>
+**Border Colors** (classes)<br/>
 ```
 purple-border
 cyan-border
