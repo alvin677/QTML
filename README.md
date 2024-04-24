@@ -8,7 +8,7 @@ Can be used to quickly design simple websites.
 [Template HTML File](https://github.com/alvin677/QTML/blob/main/template.html)<br/>
 [FontAwesome](https://fontawesome.com/)
 
-**QTML** uses pre-made classes to simplify the development of web pages.
+**QTML** uses pre-made classes to simplify the development of web pages.<br/>
 
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
