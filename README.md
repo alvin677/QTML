@@ -5,7 +5,7 @@ An HTML framework to simplify web design.<br/>
 Can be used to quickly design simple websites.
 
 # Documentation
-[Template HTML File](https://raw.githubusercontent.com/alvin677/QTML/main/template.html)
+[Template HTML File](https://raw.githubusercontent.com/alvin677/QTML/main/template.html)<br/>
 [FontAwesome](https://fontawesome.com/)
 
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
