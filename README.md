@@ -8,5 +8,8 @@ Can be used to quickly design simple websites.
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
 
-With this framework, you can easily change theme color of your elements. Available themes are:<br/>
+Available themes:<br/>
 `purple` `cyan` `red` `magenta` `yellow` `blue` `burple` `aqua` `white` `black` `gray` `darkgray`
+
+Modes:<br/>
+`light` `dark`
