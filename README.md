@@ -5,7 +5,8 @@ An HTML framework to simplify web design.<br/>
 Can be used to quickly design simple websites.
 
 # Documentation
-[a link](https://github.com/alvin677/QTML/template.html)
+[Template HTML File](https://raw.githubusercontent.com/alvin677/QTML/main/template.html)
+
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
 
