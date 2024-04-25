@@ -11,6 +11,7 @@
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
 
+**Common Classes**
 *Some classes might be more commonly used than others, here is a short list of the most useful ones*<br/>
 `container` 
 
