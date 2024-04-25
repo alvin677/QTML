@@ -69,10 +69,8 @@ accent-border - theme relative
 ```
 
 ## Elements and their supported classes
-**Footer**
-```
-center
-```
+**Footer**<br/>
+`center`
 
 ## Utility classes
 
