@@ -127,6 +127,7 @@ accent-border - theme relative
 `text-space` *modify letter spacing*<br/>
 `text-glow` *make text glow*<br/>
 `text-glow-hover` *make text glow when hovering*<br/>
+`bold` *font weight 700*<br/>
 
 **Border, Scale, Display and Position**<br/>
 `sharp` *sharp border radius*<br/>
@@ -137,6 +138,17 @@ accent-border - theme relative
 `in-block` *inline block display*<br/>
 `flex` *flex display*<br/>
 `block` *block display*<br/>
+`hide` *display none*<br/>
+`grid` *grid display*<br/>
+`wrap` *flex wrap*<br/>
+`gap` *gap*<br/>
+`relative` *position relative*<br/>
+`absolute` *position absolute*<br/>
+`fixed` *position fixed*<br/>
+`invisible` *set visibility to hidden*<br/>
+`visible` *set visibility to visible*<br/>
+`column` *flex direction column*<br/>
+`row` *flex direction row*<br/>
 
 ## Framework Variables
 ```css
