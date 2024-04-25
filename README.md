@@ -18,7 +18,7 @@ List of elements that support one or more of the classes:<br/>`button` `a` `span
 `light` `dark`
 
 A couple of elements are intially given style data when linking the framework.
-The following elements are
+The following elements are<br/>
 `body` `i` `footer` `hr` `*`, and the scrollbar is also affected.
 
 ## Colors (classes)
@@ -71,3 +71,6 @@ accent-border
 ## Elements and their supported classes
 **Footer**
 Supports
+
+## Utility classes
+
