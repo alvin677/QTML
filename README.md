@@ -137,3 +137,48 @@ accent-border - theme relative
 `in-block` *inline block display*<br/>
 `flex` *flex display*<br/>
 `block` *block display*<br/>
+
+## Framework Variables
+```css
+:root {
+    --qtml--font: 'Arial', sans-serif;
+
+    --qtml--bg: #161616; /* background color */
+    --qtml--bg-secondary: #191919; /* secondary background color */
+
+    --qtml--color: #ffffff; /* text color */
+    --qtml--color-secondary: #cccccc; /* secondary text color */
+
+    --qtml--accent: #fcfcfc; /* accent color */
+    --qtml--accent-hover: #ffffff; /* accent hover color */
+
+    --qtml--outline: 2px solid;
+    --qtml--outline-color: #404040;
+    --qtml--outline-hover: #606060;
+    
+    --qtml--element-background: transparent;
+    --qtml--margin: 10px;
+    --qtml--padding: 1.5vh 2.5vh;
+    --qtml--border-radius: 5px;
+    --qtml--line-height: 1.2;
+    --qtml--transition: 0.3s;
+    --qtml--gap: 6px;
+    --qtml--letter-spacing: 1px;
+
+    --qtml--icon-size: /*12px*/ 3vh;
+    --qtml--font-size: 3vh;
+    --qtml--button-font-size: 2vh;
+    --qtml--font-size-mobile: 16px;
+    --qtml--scale: 1.2;
+    --qtml--round: 10px;
+
+    --qtml--shadetext: #71717a; /* secondary span */
+    --qtml--text-big: 9vh;
+    --qtml--text-header: 5vh;
+    --qtml--fade-speed: 3s;
+    --qtml--animation-speed: 1s;
+    --qtml--gradient-animation-speed: 5s;
+
+    --qtml--scrollbar-background: transparent;
+}
+```
