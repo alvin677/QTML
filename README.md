@@ -107,11 +107,23 @@ accent-border - theme relative
 ## Utility classes
 `container` *mostly used on the div element, position elements correctly*<br/>
 `color` *set color to default text color (based on mode)*<br/>
+`drop-shadow` *make a drop shadow*<br/>
+
+**Glow**<br/>
+`glow` *make element glow*<br/>
+`glow-hover` *make element glow when hovering*<br/>
+
+**Gradient**<br/>
 `gradient` *make gradient text*<br/>
 `gradient-bg` *make gradient background*<br/>
 `reverse-gradient` *gradient text but reversed*<br/>
+
+**Text**<br/>
+`text-sans` *sans font*<br/>
+`text-serif` *serif font*<br/>
+`text-mono` *monospace font*<br/>
+`text-big` *enlarge text*<br/>
+`text-header` *header-like text*<br/>
+`text-space` *modify letter spacing*<br/>
 `text-glow` *make text glow*<br/>
 `text-glow-hover` *make text glow when hovering*<br/>
-`glow` *make element glow*<br/>
-`glow-hover` *make element glow when hovering*<br/>
-`drop-shadow` *make a drop shadow*<br/>
