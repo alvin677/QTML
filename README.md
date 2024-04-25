@@ -62,3 +62,6 @@ black-border
 white-border
 accent-border
 ```
+
+## Elements and their supported classes
+
