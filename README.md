@@ -73,4 +73,14 @@ accent-border - theme relative
 `center`
 
 ## Utility classes
-
+`color` *set color to default text color (based on mode)*<br/>
+`gradient` *make gradient text*<br/>
+`gradient-bg` *make gradient background*<br/>
+`` **<br/>
+`` **<br/>
+`` **<br/>
+`` **<br/>
+`` **<br/>
+`` **<br/>
+`` **<br/>
+`` **<br/>
