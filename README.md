@@ -17,8 +17,12 @@ List of elements that support one or more of the classes:<br/>`button` `a` `span
 **Theme Modes**<br/>
 `light` `dark`
 
-## Colors
-**Color Palette** (classes)<br/>
+A couple of elements are intially given style data when linking the framework.
+The following elements are
+`body` `i` `footer` `hr` `*`, and the scrollbar is also affected.
+
+## Colors (classes)
+**Color Palette**<br/>
 ```
 purple
 cyan
@@ -33,7 +37,7 @@ black
 white
 accent
 ```
-**Background Colors** (classes)<br/>
+**Background Colors**<br/>
 ```
 purple-bg
 cyan-bg
@@ -48,7 +52,7 @@ black-bg
 white-bg
 accent-bg
 ```
-**Border Colors** (classes)<br/>
+**Border Colors**<br/>
 ```
 purple-border
 cyan-border
@@ -65,4 +69,5 @@ accent-border
 ```
 
 ## Elements and their supported classes
-
+**Footer**
+Supports
