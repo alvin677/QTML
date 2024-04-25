@@ -127,3 +127,13 @@ accent-border - theme relative
 `text-space` *modify letter spacing*<br/>
 `text-glow` *make text glow*<br/>
 `text-glow-hover` *make text glow when hovering*<br/>
+
+**Border, Scale, Display and Position**<br/>
+`sharp` *sharp border radius*<br/>
+`round` *smooth border radius*<br/>
+`scale` *scale element*<br/>
+`scale-hover` *scale element when hovering*<br/>
+`in-flex` *inline flex display*<br/>
+`in-block` *inline block display*<br/>
+`flex` *flex display*<br/>
+`block` *block display*<br/>
