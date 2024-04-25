@@ -11,6 +11,9 @@
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
 
+*Some classes might be more commonly used than others, here is a short list of the most useful ones*<br/>
+`container` 
+
 **Available Themes**<br/>
 `purple` `cyan` `red` `magenta` `yellow` `blue` `burple` `aqua` `white` `black` `gray` `darkgray`
 
@@ -72,15 +75,40 @@ accent-border - theme relative
 **Footer**<br/>
 `center`
 
+**Button**<br/>
+`simple` `primary` `secondary`<br/>
+`large` `small`
+
+**Input**<br/>
+`primary`<br/>
+`large` `small`
+
+**Span**<br/>
+`primary` `secondary` `status` `success` `notify` `error` `warning`<br/>
+`large` `small`
+
+**a**<br/>
+`primary` `secondary`<br/>
+`large` `small`
+
+**i**<br/>
+`primary` `secondary`<br/>
+`large` `small`
+
+**Div**<br/>
+`outline` `border` `notification`
+
+**Iframe**<br/>
+`primary`
+
 ## Utility classes
+`container` *mostly used on the div element, position elements correctly*<br/>
 `color` *set color to default text color (based on mode)*<br/>
 `gradient` *make gradient text*<br/>
 `gradient-bg` *make gradient background*<br/>
-`` **<br/>
-`` **<br/>
-`` **<br/>
-`` **<br/>
-`` **<br/>
-`` **<br/>
-`` **<br/>
-`` **<br/>
+`reverse-gradient` *gradient text but reversed*<br/>
+`text-glow` *make text glow*<br/>
+`text-glow-hover` *make text glow when hovering*<br/>
+`glow` *make element glow*<br/>
+`glow-hover` *make element glow when hovering*<br/>
+`drop-shadow` *make a drop shadow*<br/>
