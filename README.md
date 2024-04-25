@@ -11,10 +11,11 @@
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
 
-**Common Classes**
+**Common Classes**<br/>
 *Some classes might be more commonly used than others, here is a short list of the most useful ones*<br/>
 `container` 
 
+**Reset Styling**<br/>
 A couple of elements are intially given style data when linking the framework.
 The following elements are<br/>
 `body` `i` `footer` `hr` `*`, and the scrollbar is also affected.
