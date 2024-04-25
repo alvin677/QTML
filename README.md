@@ -18,7 +18,7 @@ List of elements that support one or more of the classes:<br/>`button` `a` `span
 **Reset Styling**<br/>
 A couple of elements are intially given style data when linking the framework.
 The following elements are<br/>
-`body` `i` `footer` `hr` `*` (the scrollbar is also affected)
+`body` `i` `footer` `hr` and `*` (the scrollbar is also affected)
 
 ## Themes
 **Available Themes**<br/>
