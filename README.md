@@ -35,7 +35,7 @@ gray
 darkgray
 black
 white
-accent
+accent - theme relative
 ```
 **Background Colors**<br/>
 ```
@@ -50,7 +50,7 @@ gray-bg
 darkgray-bg
 black-bg
 white-bg
-accent-bg
+accent-bg - theme relative
 ```
 **Border Colors**<br/>
 ```
@@ -65,12 +65,14 @@ gray-border
 darkgray-border 
 black-border
 white-border
-accent-border
+accent-border - theme relative
 ```
 
 ## Elements and their supported classes
 **Footer**
-Supports
+```
+center
+```
 
 ## Utility classes
 
