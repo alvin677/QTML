@@ -165,7 +165,7 @@ accent-border - theme relative
     --qtml--gap: 6px;
     --qtml--letter-spacing: 1px;
 
-    --qtml--icon-size: /*12px*/ 3vh;
+    --qtml--icon-size: 3vh;
     --qtml--font-size: 3vh;
     --qtml--button-font-size: 2vh;
     --qtml--font-size-mobile: 16px;
