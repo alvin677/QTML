@@ -15,15 +15,16 @@ List of elements that support one or more of the classes:<br/>`button` `a` `span
 *Some classes might be more commonly used than others, here is a short list of the most useful ones*<br/>
 `container` 
 
+A couple of elements are intially given style data when linking the framework.
+The following elements are<br/>
+`body` `i` `footer` `hr` `*`, and the scrollbar is also affected.
+
+## Themes
 **Available Themes**<br/>
 `purple` `cyan` `red` `magenta` `yellow` `blue` `burple` `aqua` `white` `black` `gray` `darkgray`
 
 **Theme Modes**<br/>
 `light` `dark`
-
-A couple of elements are intially given style data when linking the framework.
-The following elements are<br/>
-`body` `i` `footer` `hr` `*`, and the scrollbar is also affected.
 
 ## Colors (classes)
 **Color Palette**<br/>
