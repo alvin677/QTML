@@ -8,6 +8,7 @@
 [Cofs.fun](https://cofs.pkings.net) *roblox related website*
 <br/>
 # Documentation
+## General documentation
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
 
