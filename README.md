@@ -13,7 +13,7 @@ List of elements that support one or more of the classes:<br/>`button` `a` `span
 
 **Common Classes**<br/>
 *Some classes might be more commonly used than others, here is a short list of the most useful ones*<br/>
-`container` 
+`container` `center` `primary`
 
 **Reset Styling**<br/>
 A couple of elements are intially given style data when linking the framework.
@@ -106,6 +106,7 @@ accent-border - theme relative
 
 ## Utility classes
 `container` *mostly used on the div element, position elements correctly*<br/>
+`center` *used to center an element*<br/>
 `color` *set color to default text color (based on mode)*<br/>
 `drop-shadow` *make a drop shadow*<br/>
 
