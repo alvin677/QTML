@@ -12,7 +12,7 @@ The following classes; `simple`, `primary` and `secondary` can be applied to cer
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
 
 **Common Classes**<br/>
-*Some classes might be more commonly used than others, here is a short list of the most useful ones*<br/>
+Some classes might be more commonly used than others, here is a short list of useful ones:<br/>
 `container` `center` `primary`
 
 **Reset Styling**<br/>
