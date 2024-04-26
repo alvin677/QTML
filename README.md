@@ -216,6 +216,8 @@ Inside of the `body`, create a `button` and apply the `simple` class:<br/>
         <button class="simple">Hello World!</button>
     </body>
 ```
+![image](https://github.com/alvin677/QTML/assets/112005397/85560f84-cee6-4fe3-b93d-a7a7416d6149)
+
 
 ## Framework Variables
 ```css
