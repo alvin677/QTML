@@ -172,9 +172,13 @@ The following elements are<br/>
 `noselect` *disable all selection*<br/>
 `pointer` *make cursor a pointer when hovering*<br/>
 
+`auto` *automatically set width and height to 100%*<br/>
+`auto-w` *automatically set width*<br/>
+`auto-h` *automatically set height*<br/>
+
 ## Animations (classes)
 **Text Pulse**<br/>
-`pulse` *pulse the text with accent color*<br/>
+`pulse` *pulse the text with accent color, works with `hr` element as well*<br/>
 
 **Fade**<br/>
 `fade-in` *fade in animation*<br/>
