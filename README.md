@@ -151,6 +151,10 @@ accent-border - theme relative
 `column` *flex direction column*<br/>
 `row` *flex direction row*<br/>
 
+`top` *vertically align on the top*<br/>
+`middle` *vertically align in the middle*<br/>
+`base` *vertically align on the baseline*<br/>
+
 ## Examples
 **Simple Button**<br/>
 ```html
