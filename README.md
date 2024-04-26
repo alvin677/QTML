@@ -99,7 +99,7 @@ accent-border - theme relative
 `large` `small`
 
 **Div**<br/>
-`outline` `border` `notification` <br/>`container` *while container is not exclusive to the div element, you will find it commonly used with it*
+`outline` `border`<br/>`notification` *notification class puts the div outside of the right bottom corner of the screen*<br/>`container` *while container is not exclusive to the div element, you will find it commonly used with it*
 
 **Iframe**<br/>
 `primary`
