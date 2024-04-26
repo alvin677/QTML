@@ -372,6 +372,11 @@ span.large, i.large, button.large, input.large, a.large {
     font-size:5vh !important;}
 span.small, i.small, button.small, input.small, a.small {
     font-size:2vh !important;}
+button.large {
+    font-size: 5vh !important;}
+button.small {
+    font-size: 1vh !important;
+    padding: 1vh 1vw;}
 i.primary {
     color: var(--qtml--accent);}
 i.secondary {
