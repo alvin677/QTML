@@ -133,21 +133,27 @@ accent-border - theme relative
 **Border, Scale, Display and Position**<br/>
 `sharp` *sharp border radius*<br/>
 `round` *smooth border radius*<br/>
+
 `scale` *scale element*<br/>
 `scale-hover` *scale element when hovering*<br/>
+
 `in-flex` *inline flex display*<br/>
 `in-block` *inline block display*<br/>
 `flex` *flex display*<br/>
 `block` *block display*<br/>
 `hide` *display none*<br/>
+
 `grid` *grid display*<br/>
 `wrap` *flex wrap*<br/>
 `gap` *gap*<br/>
+
 `relative` *position relative*<br/>
 `absolute` *position absolute*<br/>
 `fixed` *position fixed*<br/>
+
 `invisible` *set visibility to hidden*<br/>
 `visible` *set visibility to visible*<br/>
+
 `column` *flex direction column*<br/>
 `row` *flex direction row*<br/>
 
