@@ -29,50 +29,46 @@ The following elements are<br/>
 
 ## Colors (classes)
 **Color Palette**<br/>
-```
-purple
-cyan
-red
-magenta
-yellow
-blue
-burple
-gray
-darkgray
-black
-white
-accent - theme relative
-```
+`purple`
+`cyan`
+`red`
+`magenta`
+`yellow`
+`blue`
+`burple`
+`gray`
+`darkgray`
+`black`
+`white`
+`accent` - theme relative
+
 **Background Colors**<br/>
-```
-purple-bg
-cyan-bg
-red-bg
-magenta-bg
-yellow-bg
-blue-bg
-burple-bg
-gray-bg
-darkgray-bg
-black-bg
-white-bg
-accent-bg - theme relative
-```
+`purple-bg`
+`cyan-bg`
+`red-bg`
+`magenta-bg`
+`yellow-bg`
+`blue-bg`
+`burple-bg`
+`gray-bg`
+`darkgray-bg`
+`black-bg`
+`white-bg`
+`accent-bg` - theme relative
 **Border Colors**<br/>
-```
-purple-border
-cyan-border
-red-border
-magenta-border
-yellow-border
-blue-border
-burple-border
-gray-border
-darkgray-border 
-black-border
-white-border
-accent-border - theme relative
-```
+
+`purple-border`
+`cyan-border`
+`red-border`
+`magenta-border`
+`yellow-border`
+`blue-border`
+`burple-border`
+`gray-border`
+`darkgray-border` 
+`black-border`
+`white-border`
+`accent-border` - theme relative
 
 ## Elements and their supported classes
 **Footer**<br/>
