@@ -192,8 +192,29 @@ The following elements are<br/>
 Ìf an element has the `gradient` or `reverse-gradient` class applied, you can add the `animate` class to animate it.
 
 ## Examples
-**Simple Button**<br/>
+**Setup/Template**<br/>
+Prepare your web page with the Template:<br/>
 ```html
+<!DOCTYPE html>
+<html lang="en" qtml-mode="light" qtml-theme="white">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QTML Template</title>
+        <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+    </body>
+</html>
+```
+**Simple Button**<br/>
+Inside of the `body`, create a `button` and apply the `simple` class:<br/>
+```html
+    <body>
+        <button class="simple">Hello World!</button>
+    </body>
 ```
 
 ## Framework Variables
