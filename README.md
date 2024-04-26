@@ -173,8 +173,19 @@ accent-border - theme relative
 `pointer` *make cursor a pointer when hovering*<br/>
 
 ## Animations (classes)
-**Text Pulse**
+**Text Pulse**<br/>
 `pulse` *pulse the text with accent color*<br/>
+
+**Fade**<br/>
+`fade-in` *fade in animation*<br/>
+`fade-out` *fade out animation*<br/>
+
+**Scale**<br/>
+`grow` *grow element from 0 to 1*<br/>
+`shrink` *shrink element until gone*<br/>
+
+**Gradient**<br/>
+Ìf an element has the `gradient` or `reverse-gradient` class applied, you can add the `animate` class to animate it.
 
 ## Examples
 **Simple Button**<br/>
