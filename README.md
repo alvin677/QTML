@@ -108,6 +108,7 @@ accent-border - theme relative
 `container` *mostly used on the div element, position elements correctly*<br/>
 `center` *used to center an element*<br/>
 `color` *set color to default text color (based on mode)*<br/>
+`transparent` *set background color to transparent*<br/>
 `drop-shadow` *make a drop shadow*<br/>
 
 **Glow**<br/>
@@ -128,11 +129,17 @@ accent-border - theme relative
 `text-space` *modify letter spacing*<br/>
 `text-glow` *make text glow*<br/>
 `text-glow-hover` *make text glow when hovering*<br/>
+`text-left` *align text to left*<br/>
+`text-center` *align text to the middle*<br/>
+`text-right` *align text to the right*<br/>
+
 `bold` *font weight 700*<br/>
+`underline` *underline the text*<br/>
 
 **Border, Scale, Display and Position**<br/>
 `sharp` *sharp border radius*<br/>
 `round` *smooth border radius*<br/>
+`noborder` *remove border*<br/>
 
 `scale` *scale element*<br/>
 `scale-hover` *scale element when hovering*<br/>
@@ -160,6 +167,14 @@ accent-border - theme relative
 `top` *vertically align on the top*<br/>
 `middle` *vertically align in the middle*<br/>
 `base` *vertically align on the baseline*<br/>
+
+`select` *allow text selection*<br/>
+`noselect` *disable all selection*<br/>
+`pointer` *make cursor a pointer when hovering*<br/>
+
+## Animations (classes)
+**Text Pulse**
+`pulse` *pulse the text with accent color*<br/>
 
 ## Examples
 **Simple Button**<br/>
