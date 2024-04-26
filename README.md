@@ -40,6 +40,7 @@ The following elements are<br/>
 `darkgray`
 `black`
 `white`
+
 `accent` - theme relative
 
 **Background Colors**<br/>
@@ -54,7 +55,9 @@ The following elements are<br/>
 `darkgray-bg`
 `black-bg`
 `white-bg`
+
 `accent-bg` - theme relative
+
 **Border Colors**<br/>
 
 `purple-border`
@@ -68,6 +71,7 @@ The following elements are<br/>
 `darkgray-border` 
 `black-border`
 `white-border`
+
 `accent-border` - theme relative
 
 ## Elements and their supported classes
