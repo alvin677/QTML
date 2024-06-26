@@ -644,4 +644,9 @@ hr.pulse {
         font-weight: 800;
         font-size: 4.5vh;
     }
+    
+    span.large, i.large, button.large, input.large, a.large {
+        font-size:2.5vh !important;}
+    span.small, i.small, button.small, input.small, a.small {
+        font-size:1vh !important;}
 }
