@@ -7,12 +7,12 @@
 **Made with QTML** `CTRL+U` *to view source code on the website*<br/>
 [Cofs.fun](https://cofs.pkings.net) *roblox related website*
 <br/>
+# Documentation
 
 **Docs Contents**<br/>
 [Themes](#themes)
 [Colors](#colors)
 [Elements](#elements)
-# Documentation
 
 ## Introduction
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
