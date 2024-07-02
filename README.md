@@ -6,6 +6,7 @@
 
 **Made with QTML** `CTRL+U` *to view source code on the website*<br/>
 [Cofs.fun](https://cofs.pkings.net) *roblox related website*
+[Pkings.net](https://pkings.net) *video platform*
 <br/>
 # Documentation
 
