@@ -1,4 +1,4 @@
-# QTML Introduction
+# QTML
 **QTML** is an HTML framework that aims to to simplify web design with the use of pre-made classes.
 
 [Template HTML File](https://github.com/alvin677/QTML/blob/main/template.html) *start with this file*<br/>
@@ -13,6 +13,8 @@
 [Colors](#colors)
 [Elements](#elements)
 # Documentation
+
+## Introduction
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
 
