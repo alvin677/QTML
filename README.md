@@ -1,4 +1,4 @@
-# QTML
+# QTML Introduction
 **QTML** is an HTML framework that aims to to simplify web design with the use of pre-made classes.
 
 [Template HTML File](https://github.com/alvin677/QTML/blob/main/template.html) *start with this file*<br/>
