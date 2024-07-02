@@ -11,6 +11,7 @@
 **Docs Contents**<br/>
 [Themes](#themes)
 [Colors](#colors)
+[Elements](#elements)
 # Documentation
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
@@ -32,7 +33,8 @@ The following elements are<br/>
 `light` `dark`
 
 ## Colors
-(classes)
+All colors are classes that can be applied to elements.
+
 **Color Palette**<br/>
 `purple`
 `cyan`
@@ -79,7 +81,9 @@ The following elements are<br/>
 
 `accent-border` - theme relative
 
-## Elements and their supported classes
+## Elements
+All supported elements and their available classes.
+
 **Footer**<br/>
 `center`
 
