@@ -17,7 +17,7 @@
 [Utility](#utility)
 [Animations](#animations)
 [Examples](#examples)
-[Framework Variables](#framework)
+[Framework](#framework)
 
 ## Introduction
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
