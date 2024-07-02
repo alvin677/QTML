@@ -31,7 +31,8 @@ The following elements are<br/>
 **Theme Modes**<br/>
 `light` `dark`
 
-## Colors (classes)
+## Colors
+(classes)
 **Color Palette**<br/>
 `purple`
 `cyan`
