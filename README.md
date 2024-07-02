@@ -130,7 +130,6 @@ All the utility classes that you may apply to elements.
 `center` *used to center an element*<br/>
 `color` *set color to default text color (based on mode)*<br/>
 `transparent` *set background color to transparent*<br/>
-`drop-shadow` *make a drop shadow*<br/>
 
 **Glow**<br/>
 `glow` *make element glow*<br/>
@@ -156,6 +155,8 @@ All the utility classes that you may apply to elements.
 
 `bold` *font weight 700*<br/>
 `underline` *underline the text*<br/>
+
+`drop-shadow` *make a drop shadow*<br/>
 
 **Border, Scale, Display and Position**<br/>
 `sharp` *sharp border radius*<br/>
