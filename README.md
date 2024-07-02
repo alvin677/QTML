@@ -15,6 +15,8 @@
 [Colors](#colors)
 [Elements](#elements)
 [Utility](#utility)
+[Animations](#animations)
+[Examples](#examples)
 
 ## Introduction
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
@@ -118,7 +120,7 @@ All supported elements and their available classes.
 `primary`
 
 ## Utility
-All the utility classes.
+All the utility classes that you may apply to elements.
 
 `container` *mostly used on the div element, position elements correctly*<br/>
 `center` *used to center an element*<br/>
@@ -191,7 +193,9 @@ All the utility classes.
 `auto-w` *automatically set width*<br/>
 `auto-h` *automatically set height*<br/>
 
-## Animations (classes)
+## Animations
+All animations are classes that you apply to elements.
+
 **Text Pulse**<br/>
 `pulse` *pulse the text with accent color, works with `hr` element as well*<br/>
 
