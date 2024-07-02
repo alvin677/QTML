@@ -17,6 +17,7 @@
 [Utility](#utility)
 [Animations](#animations)
 [Examples](#examples)
+[Framework Variables](#framework)
 
 ## Introduction
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
@@ -237,7 +238,10 @@ Inside of the `body`, create a `button` and apply the `simple` class:<br/>
 ```
 ![image](https://github.com/alvin677/QTML/assets/112005397/85560f84-cee6-4fe3-b93d-a7a7416d6149)
 
-## Framework Variables
+## Framework
+Below is a list of all the variables that the framework contain,
+in case you want to edit anything without touching the stylesheet of the framework itself.
+
 ```css
 :root {
     --qtml--font: 'Arial', sans-serif;
