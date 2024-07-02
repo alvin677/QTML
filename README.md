@@ -14,6 +14,7 @@
 [Themes](#themes)
 [Colors](#colors)
 [Elements](#elements)
+[Utility](#utility)
 
 ## Introduction
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
@@ -116,7 +117,9 @@ All supported elements and their available classes.
 **Iframe**<br/>
 `primary`
 
-## Utility classes
+## Utility
+All the utility classes.
+
 `container` *mostly used on the div element, position elements correctly*<br/>
 `center` *used to center an element*<br/>
 `color` *set color to default text color (based on mode)*<br/>
