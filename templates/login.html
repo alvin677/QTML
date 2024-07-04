@@ -6,14 +6,42 @@
         <title>QTML Login Template</title>
         <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
     </head>
-    
+    <script>
+        function submit() {
+            // variables from the form
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let status = document.getElementById("status");
+
+            // send the POST request
+            let XML = new XMLHttpRequest();
+            XML.open("POST", "/login");
+            XML.send(JSON.stringify({email:email, password:password}));
+
+            // handle the response
+            XML.onreadystatechange = function() {
+                if (XML.readyState == 4 && XML.status == 200) {
+                    let response = JSON.parse(XML.responseText);
+                    if (response.status == "success") {
+                        //window.location.href = "/success.html";
+                        document.write("success!");
+                    }
+                }
+                else {
+                    status.classList.add("red");
+                    status.classList.remove("hide");
+                    status.textContent = "something went wrong";
+                }
+            }
+        }
+    </script>
     <body>
         <div class="center container grid" style="gap:8px; box-shadow:0 0 100px 1px var(--qtml--outline-color);">
             <span class="primary gradient animate">Login</span>
-            <input class="primary small" placeholder="email"/>
-            <input class="primary small" placeholder="password"/>
-            <!--span class="red small">something went wrong</span-->
-            <button class="primary small">Login</button>
+            <input id="email" class="primary" placeholder="email"/>
+            <input id="password" class="primary" placeholder="password"/>
+            <span id="status" class="small hide text-mono"></span>
+            <button class="primary small" onclick="submit();">Login</button>
         </div>
     </body>
 </html>
