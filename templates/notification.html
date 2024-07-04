@@ -1,4 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" qtml-mode="light" qtml-theme="cyan">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QTML Notification Template</title>
+        <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
+    </head>
     <style>
         #notification {
             position:fixed; 
@@ -9,9 +16,25 @@
         }
     </style>
     <body>
-        <div id="notification">New Notification!</div>
-        <script>
-            setTimeout(() => {document.getElementById("notification").style.right = 0;},1000)
-        </script>
+        <div class="center">
+            <button class="primary" onclick="send('notify')">Notify</button>
+            <button class="primary" onclick="send('error')">Error</button>
+            <button class="primary" onclick="send('warning')">Warn</button>
+            <button class="primary" onclick="send('success')">Success</button>
+        </div>
+
+        <div id="notification">
+            <span class="warning">New Notification!</span>
+        </div>
     </body>
+        
+    <script>
+        function send(type) {
+            let message = document.getElementById("notification");
+            message.children[0].className = type;
+            message.style.right = 0; // move to screen area
+            setTimeout(function() { message.style.right = "-100%"; }, 2000); // put away again after 2 seconds
+        }
+    </script>
+    
 </html>
