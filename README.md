@@ -95,30 +95,30 @@ All colors are classes that can be applied to elements.
 All supported elements and their available classes.
 
 **Footer**<br/>
-`center`
+    `center`
 
 **Button**<br/>
-`simple` `primary` `secondary`<br/>
-`large` `small`
+    `simple` `primary` `secondary`<br/>
+    `large` `small`
 
 **Input**<br/>
-`primary`<br/>
-`large` `small`
+    `primary`<br/>
+    `large` `small`
 
 **Span**<br/>
-`primary` `secondary` `status` `success` `notify` `error` `warning`<br/>
-`large` `small`
+    `primary` `secondary` `status` `success` `notify` `error` `warning`<br/>
+    `large` `small`
 
 **a**<br/>
-`primary` `secondary`<br/>
-`large` `small`
+    `primary` `secondary`<br/>
+    `large` `small`
 
 **i**<br/>
-`primary` `secondary`<br/>
-`large` `small`
+    `primary` `secondary`<br/>
+    `large` `small`
 
 **Div**<br/>
-`outline` `border`<br/>`notification` *notification class puts the div outside of the right bottom corner of the screen*<br/>`container` *while container is not exclusive to the div element, you will find it commonly used with it*
+    `outline` `border`<br/>`notification` *notification class puts the div outside of the right bottom corner of the screen*<br/>`container` *while container is not exclusive to the div element, you will find it commonly used with it*
 
 **Iframe**<br/>
 `primary`
@@ -132,85 +132,85 @@ All the utility classes that you may apply to elements.
 `transparent` *set background color to transparent*<br/>
 
 **Glow**<br/>
-`glow` *make element glow*<br/>
-`glow-hover` *make element glow when hovering*<br/>
+    `glow` *make element glow*<br/>
+    `glow-hover` *make element glow when hovering*<br/>
 
 **Gradient**<br/>
-`gradient` *make gradient text*<br/>
-`gradient-bg` *make gradient background*<br/>
-`reverse-gradient` *gradient text but reversed*<br/>
+    `gradient` *make gradient text*<br/>
+    `gradient-bg` *make gradient background*<br/>
+    `reverse-gradient` *gradient text but reversed*<br/>
 
 **Text**<br/>
-`text-sans` *sans font*<br/>
-`text-serif` *serif font*<br/>
-`text-mono` *monospace font*<br/>
-`text-big` *enlarge text*<br/>
-`text-header` *header-like text*<br/>
-`text-space` *modify letter spacing*<br/>
-`text-glow` *make text glow*<br/>
-`text-glow-hover` *make text glow when hovering*<br/>
-`text-left` *align text to left*<br/>
-`text-center` *align text to the middle*<br/>
-`text-right` *align text to the right*<br/>
+    `text-sans` *sans font*<br/>
+    `text-serif` *serif font*<br/>
+    `text-mono` *monospace font*<br/>
+    `text-big` *enlarge text*<br/>
+    `text-header` *header-like text*<br/>
+    `text-space` *modify letter spacing*<br/>
+    `text-glow` *make text glow*<br/>
+    `text-glow-hover` *make text glow when hovering*<br/>
+    `text-left` *align text to left*<br/>
+    `text-center` *align text to the middle*<br/>
+    `text-right` *align text to the right*<br/>
 
-`bold` *font weight 700*<br/>
-`underline` *underline the text*<br/>
+    `bold` *font weight 700*<br/>
+    `underline` *underline the text*<br/>
 
-`drop-shadow` *make a drop shadow*<br/>
+    `drop-shadow` *make a drop shadow*<br/>
 
 **Border, Scale, Display and Position**<br/>
-`sharp` *sharp border radius*<br/>
-`round` *smooth border radius*<br/>
-`noborder` *remove border*<br/>
+    `sharp` *sharp border radius*<br/>
+    `round` *smooth border radius*<br/>
+    `noborder` *remove border*<br/>
 
-`scale` *scale element*<br/>
-`scale-hover` *scale element when hovering*<br/>
+    `scale` *scale element*<br/>
+    `scale-hover` *scale element when hovering*<br/>
 
-`in-flex` *inline flex display*<br/>
-`in-block` *inline block display*<br/>
-`flex` *flex display*<br/>
-`block` *block display*<br/>
-`hide` *display none*<br/>
+    `in-flex` *inline flex display*<br/>
+    `in-block` *inline block display*<br/>
+    `flex` *flex display*<br/>
+    `block` *block display*<br/>
+    `hide` *display none*<br/>
 
-`grid` *grid display*<br/>
-`wrap` *flex wrap*<br/>
-`gap` *gap*<br/>
+    `grid` *grid display*<br/>
+    `wrap` *flex wrap*<br/>
+    `gap` *gap*<br/>
 
-`relative` *position relative*<br/>
-`absolute` *position absolute*<br/>
-`fixed` *position fixed*<br/>
+    `relative` *position relative*<br/>
+    `absolute` *position absolute*<br/>
+    `fixed` *position fixed*<br/>
 
-`invisible` *set visibility to hidden*<br/>
-`visible` *set visibility to visible*<br/>
+    `invisible` *set visibility to hidden*<br/>
+    `visible` *set visibility to visible*<br/>
 
-`column` *flex direction column*<br/>
-`row` *flex direction row*<br/>
+    `column` *flex direction column*<br/>
+    `row` *flex direction row*<br/>
 
-`top` *vertically align on the top*<br/>
-`middle` *vertically align in the middle*<br/>
-`base` *vertically align on the baseline*<br/>
+    `top` *vertically align on the top*<br/>
+    `middle` *vertically align in the middle*<br/>
+    `base` *vertically align on the baseline*<br/>
 
-`select` *allow text selection*<br/>
-`noselect` *disable all selection*<br/>
-`pointer` *make cursor a pointer when hovering*<br/>
+    `select` *allow text selection*<br/>
+    `noselect` *disable all selection*<br/>
+    `pointer` *make cursor a pointer when hovering*<br/>
 
-`auto` *automatically set width and height to 100%*<br/>
-`auto-w` *automatically set width*<br/>
-`auto-h` *automatically set height*<br/>
+    `auto` *automatically set width and height to 100%*<br/>
+    `auto-w` *automatically set width*<br/>
+    `auto-h` *automatically set height*<br/>
 
 ## Animations
 All animations are classes that you apply to elements.
 
 **Text Pulse**<br/>
-`pulse` *pulse the text with accent color, works with `hr` element as well*<br/>
+    `pulse` *pulse the text with accent color, works with `hr` element as well*<br/>
 
 **Fade**<br/>
-`fade-in` *fade in animation*<br/>
-`fade-out` *fade out animation*<br/>
+    `fade-in` *fade in animation*<br/>
+    `fade-out` *fade out animation*<br/>
 
 **Scale**<br/>
-`grow` *grow element from 0 to 1*<br/>
-`shrink` *shrink element until gone*<br/>
+    `grow` *grow element from 0 to 1*<br/>
+    `shrink` *shrink element until gone*<br/>
 
 **Gradient**<br/>
 Ìf an element has the `gradient` or `reverse-gradient` class applied, you can add the `animate` class to animate it.
