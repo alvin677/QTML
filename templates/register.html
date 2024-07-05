@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" qtml-mode="light" qtml-theme="cyan">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QTML Register Template</title>
+        <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
+    </head>
+    <script>
+        function submit() {
+            // variables from the form
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let password_confirm = document.getElementById("password_confirm").value;
+            let status = document.getElementById("status");
+
+            // check password and confirm password match
+            if (password != password_confirm) {
+                status.classList.add("red");
+                status.classList.remove("hide");
+                status.textContent = "passwords do not match";
+                return -1; // return error
+            }
+        
+            // send the POST request
+            let XML = new XMLHttpRequest();
+            XML.open("POST", "/register");
+            XML.send(JSON.stringify({username:username, email:email, password:password}));
+
+            // handle the response
+            XML.onreadystatechange = function() {
+                if (XML.readyState == 4 && XML.status == 200) {
+                    let response = JSON.parse(XML.responseText);
+                    if (response.status == "success") {
+                        //window.location.href = "/success.html";
+                        document.write("success!");
+                    }
+                }
+                else {
+                    status.classList.add("red");
+                    status.classList.remove("hide");
+                    status.textContent = "something went wrong";
+                }
+            }
+        }
+
+        window.onload = function() {
+            let tos_checkbox = document.getElementById("tos");
+            let register_button = document.getElementById("register");
+            tos_checkbox.onchange = function() {
+                if(tos_checkbox.checked) {
+                    register.classList.remove("disabled");
+                }
+                else {
+                    register.classList.add("disabled");
+                }
+            }
+        }
+    </script>
+    <body>
+        <div class="center container grid" style="gap:8px; box-shadow:0 0 100px 1px var(--qtml--outline-color);">
+            <span class="primary gradient animate">Register</span>
+            <input id="username" type="text" class="primary" placeholder="username"/>
+            <input id="email" type="email" class="primary" placeholder="email"/>
+            <input id="password" type="password" class="primary" placeholder="password"/>
+            <input id="password_confirm" type="password" class="primary" placeholder="confirm password"/>
+            <div class="flex">
+                <input id="tos" type="checkbox" />
+                <label for="tos" style="font-size:1vh;margin-left:1vh;">I agree to the <a class="primary" href="/tos">Terms of Service</a>
+                </label>
+            </div>
+            <span id="status" class="small hide text-mono"></span>
+            <button id="register" class="primary small disabled" onclick="submit();">Register</button>
+        </div>
+    </body>
+</html>
