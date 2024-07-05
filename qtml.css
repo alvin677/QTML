@@ -515,6 +515,9 @@ div.notification {
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;}
+.disabled {
+    pointer-events:none;
+    filter: invert(0.5);}
 .underline {
     text-decoration:underline;}
 .noborder {
