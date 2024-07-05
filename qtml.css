@@ -426,8 +426,19 @@ div.border {
     border-color: var(--qtml--outline-color);
     border-radius: var(--qtml--border-radius);}
 iframe.primary {
-    border-radius: var(--qtml--border-radius);
-}
+    border-radius: var(--qtml--border-radius);}
+table.primary {
+    width:100%;
+    border-collapse: collapse;}
+table.primary td {
+    background-color: var(--qtml--bg);}
+table.primary th {
+    text-decoration:underline;}
+table.primary tr:nth-child(even) td {
+    background-color: var(--qtml--accent);}
+table.primary td, table.primary th {
+    text-align: left;
+    padding: var(--qtml--padding);}
 .container {
     background-color: var(--qtml--bg-secondary);
     border: var(--qtml--outline);
