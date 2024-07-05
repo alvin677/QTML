@@ -21,6 +21,33 @@ It also tries to make websites more mobile adapted.
 - [Setup](#setup)
 - [Framework](#framework)
 
+## Setup
+**Setup/Template**<br/>
+Prepare your web page with the Template:<br/>
+```html
+<!DOCTYPE html>
+<html lang="en" qtml-mode="light" qtml-theme="white">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QTML Template</title>
+        <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+    </body>
+</html>
+```
+**Simple Button**<br/>
+Inside of the `body`, create a `button` and apply the `simple` class:<br/>
+```html
+    <body>
+        <button class="simple">Hello World!</button>
+    </body>
+```
+![image](https://github.com/alvin677/QTML/assets/112005397/85560f84-cee6-4fe3-b93d-a7a7416d6149)
+
 ## Introduction
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
 List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe`.
@@ -213,33 +240,6 @@ All animations are classes that you apply to elements.
 
 **Gradient**<br/>
 Ìf an element has the `gradient` or `reverse-gradient` class applied, you can add the `animate` class to animate it.
-
-## Setup
-**Setup/Template**<br/>
-Prepare your web page with the Template:<br/>
-```html
-<!DOCTYPE html>
-<html lang="en" qtml-mode="light" qtml-theme="white">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>QTML Template</title>
-        <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
-    </head>
-    
-    <body>
-
-    </body>
-</html>
-```
-**Simple Button**<br/>
-Inside of the `body`, create a `button` and apply the `simple` class:<br/>
-```html
-    <body>
-        <button class="simple">Hello World!</button>
-    </body>
-```
-![image](https://github.com/alvin677/QTML/assets/112005397/85560f84-cee6-4fe3-b93d-a7a7416d6149)
 
 ## Framework
 Below is a list of all the variables that the framework contain,
