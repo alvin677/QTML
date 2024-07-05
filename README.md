@@ -156,6 +156,7 @@ All the utility classes that you may apply to elements.
 `center` *used to center an element*<br/>
 `color` *set color to default text color (based on mode)*<br/>
 `transparent` *set background color to transparent*<br/>
+`disabled` *disable an element*<br/>
 
 **Glow**<br/>
 `glow` *make element glow*<br/>
