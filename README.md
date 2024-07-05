@@ -296,3 +296,4 @@ Will be added/done:
 - `textarea` support
 - make sure checkboxes and such work fine
 - `label` support
+- `disabled` class?
