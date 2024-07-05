@@ -80,6 +80,7 @@ All colors are classes that can be applied to elements.
 `yellow`
 `blue`
 `burple`
+`aqua`
 `gray`
 `darkgray`
 `black`
@@ -95,6 +96,7 @@ All colors are classes that can be applied to elements.
 `yellow-bg`
 `blue-bg`
 `burple-bg`
+`aqua-bg`
 `gray-bg`
 `darkgray-bg`
 `black-bg`
@@ -111,6 +113,7 @@ All colors are classes that can be applied to elements.
 `yellow-border`
 `blue-border`
 `burple-border`
+`aqua-border`
 `gray-border`
 `darkgray-border` 
 `black-border`
