@@ -295,3 +295,5 @@ Will be added/done:
 - `blur` class
 - `textarea` support
 - make sure checkboxes and such work fine
+- `label` support
+- put labels in login.html example
