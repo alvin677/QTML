@@ -5,7 +5,7 @@ It also tries to make websites more mobile adapted.<br/>
 
 You can view the `qtml.css` file to see all the variables that you can reference.
 
-[Template HTML File](https://github.com/alvin677/QTML/blob/main/templates/template.html) *start with this file*<br/>
+[Template HTML File](https://github.com/alvin677/QTML/blob/main/examples/template.html) *start with this file*<br/>
 
 **Icon Resources**<br/>
 [FontAwesome](https://fontawesome.com/)<br/>
