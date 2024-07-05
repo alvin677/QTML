@@ -6,7 +6,7 @@ It also tries to make websites more mobile adapted.
 [FontAwesome](https://fontawesome.com/) *cool icons*<br/>
 
 **Made with QTML** (`CTRL+U` *to view source code on the website*)<br/>
-[Cofs.fun](https://cofs.pkings.net) *roblox related websites*<br/>
+[Cofs.fun](https://cofs.pkings.net) *roblox related website*<br/>
 [PKings.net](https://pkings.net) *video platform*
 <br/>
 # Documentation
