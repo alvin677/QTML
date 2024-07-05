@@ -250,7 +250,7 @@ All animations are classes that you apply to elements.
 `shrink` *shrink element until gone*<br/>
 
 **Gradient**<br/>
-Ìf an element has the `gradient` or `reverse-gradient` class applied, you can add the `animate` class to animate it.
+If an element has the `gradient` or `reverse-gradient` class applied, you can add the `animate` class to animate it.
 
 ## Updates
 Ideas and what will be added/done:
