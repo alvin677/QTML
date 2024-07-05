@@ -12,13 +12,13 @@ It also tries to make websites more mobile adapted.
 # Documentation
 
 **Docs Contents**<br/>
+- [Setup](#setup)
 - [Introduction](#introduction)
 - [Themes](#themes)
 - [Colors](#colors)
 - [Elements](#elements)
 - [Utility](#utility)
 - [Animations](#animations)
-- [Setup](#setup)
 - [Framework](#framework)
 
 ## Setup
