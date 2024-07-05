@@ -331,6 +331,23 @@ input.primary::placeholder {
     transition:var(--qtml--transition);}
 input:focus{
     outline: none;}
+
+textarea.primary {
+    background: var(--qtml--element-background);
+    border: var(--qtml--outline);
+    border-color: var(--qtml--outline-color);
+    border-radius: var(--qtml--border-radius);
+    padding: var(--qtml--padding);
+    color:var(--qtml--color);}  
+textarea.primary:hover {
+    border-color: var(--qtml--outline-hover);}
+textarea.primary:hover::placeholder {
+    color:var(--qtml--accent);
+    transition:var(--qtml--transition);}
+textarea.primary::placeholder {
+    transition:var(--qtml--transition);}
+textarea:focus{
+    outline: none;}
 span.primary {
     color: var(--qtml--accent);
     letter-spacing: 1px;
