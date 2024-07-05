@@ -156,6 +156,9 @@ All supported elements and their available classes.
 **Textarea**<br/>
 `primary`
 
+**Table**<br/>
+`primary`
+
 ## Utility
 All the utility classes that you may apply to elements.
 
