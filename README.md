@@ -13,8 +13,8 @@ You can view the `qtml.css` file to see all the variables that you can reference
 
 **Made with QTML** (`CTRL+U` *to view source code on the website*)<br/>
 [Cofs.fun](https://cofs.pkings.net) *roblox related website*<br/>
-[PKings.net](https://pkings.net) *video platform, W.I.P*
-<br/>
+[PKings.net](https://pkings.net) *video platform, W.I.P*<br/>
+
 # Documentation
 
 **Docs Contents**<br/>
