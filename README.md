@@ -1,7 +1,7 @@
 # QTML
 **QTML** is an HTML framework that aims to to simplify web design with the use of pre-made classes.<br/>
 It also tries to make websites more mobile adapted.<br/>
-*This "framework" is far from good and finished, it is just something that I use wrote to use personally.*
+*This "framework" is far from good and finished, it is just something that I wrote to use personally.*
 
 You can view the `qtml.css` file to see all the variables that you can reference.
 
