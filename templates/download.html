@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" qtml-mode="light" qtml-theme="black">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QTML Download Template</title>
+        <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
+    </head>
+    <body>
+        <textarea class="primary" id="textArea" rows="10" cols="50"></textarea><br>
+        <button class="primary" onclick="downloadText()">Download Text</button>
+
+        <script>
+            function downloadText() {
+                const text = document.getElementById("textArea").value;
+                const blob = new Blob([text], { type: 'text/plain' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = "file_name.txt";
+                a.click();
+            }
+        </script>
+    </body>
+</html>
