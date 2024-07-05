@@ -254,7 +254,6 @@ If an element has the `gradient` or `reverse-gradient` class applied, you can ad
 
 ## Updates
 Ideas and what will be added/done:
-- `table` design(s) and example
 - `blur` class??
 - make sure checkboxes and such work fine
 - `label` support
