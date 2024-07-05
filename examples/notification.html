@@ -6,15 +6,6 @@
         <title>QTML Notification Template</title>
         <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
     </head>
-    <style>
-        #notification {
-            position:fixed; 
-            bottom:0; 
-            right: -100%;
-            transition:1s;
-            max-width:100%;
-        }
-    </style>
     <body>
         <div class="center">
             <button class="primary" onclick="send('notify')">Notify</button>
@@ -23,7 +14,7 @@
             <button class="primary" onclick="send('success')">Success</button>
         </div>
 
-        <div id="notification">
+        <div id="notification" class="notification">
             <span class="warning">New Notification!</span>
         </div>
     </body>
