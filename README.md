@@ -18,7 +18,7 @@ It also tries to make websites more mobile adapted.
 - [Elements](#elements)
 - [Utility](#utility)
 - [Animations](#animations)
-- [Examples](#examples)
+- [Setup](#setup)
 - [Framework](#framework)
 
 ## Introduction
@@ -214,7 +214,7 @@ All animations are classes that you apply to elements.
 **Gradient**<br/>
 Ìf an element has the `gradient` or `reverse-gradient` class applied, you can add the `animate` class to animate it.
 
-## Examples
+## Setup
 **Setup/Template**<br/>
 Prepare your web page with the Template:<br/>
 ```html
