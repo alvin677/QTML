@@ -331,7 +331,6 @@ input.primary::placeholder {
     transition:var(--qtml--transition);}
 input:focus{
     outline: none;}
-
 textarea.primary {
     background: var(--qtml--element-background);
     border: var(--qtml--outline);
