@@ -19,7 +19,6 @@ It also tries to make websites more mobile adapted.
 - [Elements](#elements)
 - [Utility](#utility)
 - [Animations](#animations)
-- [Framework](#framework)
 
 ## Setup
 **Setup/Template**<br/>
@@ -241,54 +240,6 @@ All animations are classes that you apply to elements.
 
 **Gradient**<br/>
 Ìf an element has the `gradient` or `reverse-gradient` class applied, you can add the `animate` class to animate it.
-
-## Framework
-Below is a list of all the variables that the framework contain,
-in case you want to edit anything without touching the stylesheet of the framework itself.
-
-```css
-:root {
-    --qtml--font: 'Arial', sans-serif;
-
-    --qtml--bg: #161616; /* background color */
-    --qtml--bg-secondary: #191919; /* secondary background color */
-
-    --qtml--color: #ffffff; /* text color */
-    --qtml--color-secondary: #cccccc; /* secondary text color */
-
-    --qtml--accent: #fcfcfc; /* accent color */
-    --qtml--accent-hover: #ffffff; /* accent hover color */
-
-    --qtml--outline: 2px solid;
-    --qtml--outline-color: #404040;
-    --qtml--outline-hover: #606060;
-    
-    --qtml--element-background: transparent;
-    --qtml--margin: 10px;
-    --qtml--padding: 1.5vh 2.5vh;
-    --qtml--border-radius: 5px;
-    --qtml--line-height: 1.2;
-    --qtml--transition: 0.3s;
-    --qtml--gap: 6px;
-    --qtml--letter-spacing: 1px;
-
-    --qtml--icon-size: 3vh;
-    --qtml--font-size: 3vh;
-    --qtml--button-font-size: 2vh;
-    --qtml--font-size-mobile: 16px;
-    --qtml--scale: 1.2;
-    --qtml--round: 10px;
-
-    --qtml--shadetext: #71717a; /* secondary span */
-    --qtml--text-big: 9vh;
-    --qtml--text-header: 5vh;
-    --qtml--fade-speed: 3s;
-    --qtml--animation-speed: 1s;
-    --qtml--gradient-animation-speed: 5s;
-
-    --qtml--scrollbar-background: transparent;
-}
-```
 
 ## Updates
 Ideas and what will be added/done:
