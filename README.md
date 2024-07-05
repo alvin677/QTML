@@ -3,7 +3,7 @@
 It also tries to make websites more mobile adapted.
 
 
-[Template HTML File](https://github.com/alvin677/QTML/blob/main/template.html) *start with this file*<br/>
+[Template HTML File](https://github.com/alvin677/QTML/blob/main/templates/template.html) *start with this file*<br/>
 [FontAwesome](https://fontawesome.com/) *cool icons*<br/>
 
 **Made with QTML** (`CTRL+U` *to view source code on the website*)<br/>
