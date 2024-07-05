@@ -291,9 +291,9 @@ in case you want to edit anything without touching the stylesheet of the framewo
 ```
 
 ## Updates
-Will be added/done:
+Ideas and what will be added/done:
 - `table` design(s) and example
-- `blur` class
+- `blur` class??
 - `textarea` support
 - make sure checkboxes and such work fine
 - `label` support
