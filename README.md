@@ -12,14 +12,14 @@ It also tries to make websites more mobile adapted.
 # Documentation
 
 **Docs Contents**<br/>
-[Introduction](#introduction)
-[Themes](#themes)
-[Colors](#colors)
-[Elements](#elements)
-[Utility](#utility)
-[Animations](#animations)
-[Examples](#examples)
-[Framework](#framework)
+- [Introduction](#introduction)
+- [Themes](#themes)
+- [Colors](#colors)
+- [Elements](#elements)
+- [Utility](#utility)
+- [Animations](#animations)
+- [Examples](#examples)
+- [Framework](#framework)
 
 ## Introduction
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
