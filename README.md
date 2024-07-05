@@ -150,6 +150,9 @@ All supported elements and their available classes.
 **Iframe**<br/>
 `primary`
 
+**Textarea**<br/>
+`primary`
+
 ## Utility
 All the utility classes that you may apply to elements.
 
@@ -247,6 +250,5 @@ All animations are classes that you apply to elements.
 Ideas and what will be added/done:
 - `table` design(s) and example
 - `blur` class??
-- `textarea` support
 - make sure checkboxes and such work fine
 - `label` support
