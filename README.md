@@ -288,3 +288,8 @@ in case you want to edit anything without touching the stylesheet of the framewo
     --qtml--scrollbar-background: transparent;
 }
 ```
+
+## Updates
+Will be added:
+- table design(s)
+- `blur` class
