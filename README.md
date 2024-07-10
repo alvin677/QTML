@@ -199,6 +199,7 @@ All the utility classes that you may apply to elements.
 
 `bold` *font weight 700*<br/>
 `underline` *underline the text*<br/>
+`underline-hover` *underline when hovering text*<br/>
 
 `drop-shadow` *make a drop shadow*<br/>
 
