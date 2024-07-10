@@ -7,25 +7,36 @@
         <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body>
-        <div class="container center">
-            <img src="user.png" width="128px" height="128px" class="middle" />
+    <style>
+        img.pfp {height:16vh; width:16vh;}
+        #follow-button:hover {margin-right:1vh;}
+    </style>
+    <body class="text-sans noselect">
+        <div class="container center" style="width:60%; height:80%">
+            <img src="user.png" width="128px" height="128px" class="middle pfp" />
             <span class="middle bold">Username</span>
-            <div class="in-block" style="margin-left:8vh;">
-                <button class="primary">Follow</button>
+            <div class="in-block absolute" style="right:1vh;">
+                <button class="primary scale-hover"><i class="fa-solid fa-paper-plane middle small"></i><span class="middle"> Message</span></button>
+                <button id="follow-button" class="primary scale-hover"><i class="fa-solid fa-heart middle small"></i><span class="middle"> Follow</span></button>
             </div>
             <br/>
+
             <div class="in-block auto-w small" style="margin-top:12px;">
                 <table class="auto-w">
                     <tr><th><span class="secondary">Posts</span></th><th><span class="secondary">Followers </span></th></tr>
                     <tr><td class="text-center">0</td><td class="text-center">0</td></tr>
                 </table>
             </div><br/>
+            
             <div>
-                <button class="secondary small"><a><i class="fa-solid fa-hashtag"></i></a></button>
+                <a><button class="secondary small"><i class="fa-brands fa-youtube"></i></button></a>
+                <a><button class="secondary small"><i class="fa-brands fa-discord"></i></button></a>
+                <a><button class="secondary small"><i class="fa-brands fa-tiktok"></i></button></a>
             </div>
-            <br/>
-            <span class="secondary small">User Description</span>
+
+            <div class="container" style="margin-top:1vh; margin-bottom:2vh;">
+                <span>User Description</span>
+            </div>
             <hr>
             
         </div>
