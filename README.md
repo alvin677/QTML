@@ -15,7 +15,7 @@ You can view the `qtml.css` file to see all the variables that you can reference
 [Cofs.fun](https://cofs.pkings.net) *roblox related website*<br/>
 [PKings.net](https://pkings.net) *video platform, W.I.P*<br/>
 
-You may also take a look at the 'examples' folder in this Github Repo.
+You may also take a look at the **'examples'** folder in this Github Repo.
 
 # Documentation
 
