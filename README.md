@@ -163,6 +163,9 @@ All supported elements and their available classes.
 **Table**<br/>
 `primary`
 
+**Hr**<br/>
+`primary`
+
 ## Utility
 All the utility classes that you may apply to elements.
 
