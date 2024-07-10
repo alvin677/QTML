@@ -219,10 +219,11 @@ footer {
 footer.center {
     text-align: center;}
 hr {
-    background-color: var(--qtml--accent);
+    background-color: var(--qtml--color);
     height: 1px;
-    border: none;
-}
+    border: none;}
+hr.primary {
+    background-color: var(--qtml--accent);}
 /* Utilities */
 .color {
     color: var(--qtml--color) !important;}
