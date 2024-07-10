@@ -388,9 +388,9 @@ span.warning {
     color: 	#fccb06;
     padding: 2px 4px;
     border-radius:4px;}
-span.large, i.large, button.large, input.large, a.large {
+span.large, i.large, button.large, input.large, a.large, div.large {
     font-size:5vh !important;}
-span.small, i.small, button.small, a.small {
+span.small, i.small, button.small, a.small, div.small {
     font-size:2vh !important;}
 input.small {
     padding: 1vh 2vh !important;}
