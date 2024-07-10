@@ -9,10 +9,16 @@
     </head>
     <style>
         img.pfp {height:16vh; width:16vh;}
+
         #follow-button:hover {margin-right:1vh;}
+        
+        body {background:url("./user.png");}
+
+        #user {filter:opacity(0.9);}
+        #user:hover {filter:opacity(1)};
     </style>
     <body class="text-sans noselect">
-        <div class="container center" style="width:60%; height:80%">
+        <div id="user" class="container center" style="width:60%; height:80%;">
             <img src="user.png" width="128px" height="128px" class="middle pfp" />
             <span class="middle bold">Username</span>
             <div class="in-block absolute" style="right:1vh;">
