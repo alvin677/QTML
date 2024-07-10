@@ -555,6 +555,8 @@ div.notification {
     filter:opacity(0.5);}
 .underline {
     text-decoration:underline;}
+.underline-hover:hover {
+    text-decoration:underline;}
 .noborder {
     border:none !important;}
 .pointer {
