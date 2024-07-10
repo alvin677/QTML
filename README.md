@@ -55,7 +55,7 @@ Inside of the `body`, create a `button` and apply the `simple` class:<br/>
 
 ## Introduction
 The following classes; `simple`, `primary` and `secondary` can be applied to certain elements to change their styles.<br/>
-List of elements that support one or more of the classes:<br/>`button` `a` `span` `input` `i` `iframe` `textarea` `table`.
+Head over to [Elements](#elements) for a list of supported classes for each element.
 
 **Common Classes**<br/>
 Some classes might be more commonly used than others, here is a short list of useful ones:<br/>
