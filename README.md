@@ -3,7 +3,7 @@
 It is very easy to use and also tries to adapt websites for a better mobile experience.<br/>
 *This "framework" is far from good and finished, it is just something that I wrote to use personally.*
 
-You can view the `qtml.css` file to see all the variables that you can reference.
+You can view the `qtml.css` file to see all the variables that you can reference (if you want to use the variables on other non-supported elements). 
 
 [Template HTML File](https://github.com/alvin677/QTML/blob/main/examples/template.html) *start with this file*<br/>
 
