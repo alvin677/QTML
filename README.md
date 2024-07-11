@@ -258,6 +258,7 @@ All animations are classes that you apply to elements.
 **Scale**<br/>
 `grow` *grow element from 0 to 1*<br/>
 `shrink` *shrink element until gone*<br/>
+`beat` *grow and shrink repeatedly*<br/>
 
 **Gradient**<br/>
 If an element has the `gradient` or `reverse-gradient` class applied, you can add the `animate` class to animate it.
