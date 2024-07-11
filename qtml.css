@@ -679,6 +679,11 @@ hr.pulse {
     animation: reverse-gradient var(--qtml--gradient-animation-speed) ease infinite;
 }
 
+@keyframes beat {
+    0%, 90% {-webkit-transform: scale(1); transform: scale(1);}
+    45% {-webkit-transform: scale(1.25); transform: scale(1.25);}
+}
+.beat {animation:beat var(--qtml--animation-speed) ease infinite; animation-fill-mode:forwards;}
 
 /* mobile */
 @media (max-width: 900px) {
