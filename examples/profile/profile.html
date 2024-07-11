@@ -14,11 +14,16 @@
         
         body {background:url("./user.png"); background-color:var(--qtml--bg);}
 
-        #user {filter:opacity(0.9);}
-        #user:hover {filter:opacity(1)};
+        #user {overflow:auto;} /* allow scrolling through posts */
+
+        #posts {margin-top:2vh;}
+        div.post {display:inline;}
+        img.post {width:18vw; height:30vh;} /* always fit 3 posts on each row */
+
+        ::-webkit-scrollbar{width:0;} /* hide scrollbar */
     </style>
     <body class="text-sans noselect">
-        <div id="user" class="container center" style="width:60%; height:80%;">
+        <div id="user" class="container center" style="width:60%; height:90%;">
             <img src="user.png" width="128px" height="128px" class="middle pfp" />
             <span class="middle bold">Username</span>
             <div class="in-block absolute" style="right:1vh;">
@@ -43,7 +48,19 @@
             <div class="container" style="margin-top:1vh; margin-bottom:2vh;">
                 <span>User Description</span>
             </div>
+
             <hr>
+
+            <div id="posts">
+                <div class="post"><img class="post" src="./post.png" /></div>
+                <div class="post"><img class="post" src="./post.png" /></div>
+                <div class="post"><img class="post" src="./post.png" /></div>
+                <div class="post"><img class="post" src="./post.png" /></div>
+                <div class="post"><img class="post" src="./post.png" /></div>
+                <div class="post"><img class="post" src="./post.png" /></div>
+                <div class="post"><img class="post" src="./post.png" /></div>
+                <div class="post"><img class="post" src="./post.png" /></div>
+            </div>
             
         </div>
     </body>
