@@ -10,9 +10,9 @@
     <style>
         img.pfp {height:16vh; width:16vh;}
 
-        #follow-button:hover {margin-right:1vh;}
+        #follow-button:hover, #message-button:hover {margin-right:1vh;}
         
-        body {background:url("./user.png");}
+        body {background:url("./user.png"); background-color:var(--qtml--bg);}
 
         #user {filter:opacity(0.9);}
         #user:hover {filter:opacity(1)};
@@ -22,7 +22,7 @@
             <img src="user.png" width="128px" height="128px" class="middle pfp" />
             <span class="middle bold">Username</span>
             <div class="in-block absolute" style="right:1vh;">
-                <button class="primary scale-hover"><i class="fa-solid fa-paper-plane middle small"></i><span class="middle"> Message</span></button>
+                <button id="message-button" class="primary scale-hover"><i class="fa-solid fa-paper-plane middle small"></i><span class="middle"> Message</span></button>
                 <button id="follow-button" class="primary scale-hover"><i class="fa-solid fa-heart middle small"></i><span class="middle"> Follow</span></button>
             </div>
             <br/>
