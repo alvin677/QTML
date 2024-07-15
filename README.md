@@ -268,4 +268,3 @@ Ideas and what will be added/done:
 - `blur` class??
 - make sure checkboxes and such work fine
 - `label` support
-- skid a couple of fontawesome's animations
