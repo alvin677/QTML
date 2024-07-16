@@ -31,7 +31,8 @@
     --qtml--font-size-mobile: 16px;
     --qtml--scale: 1.2;
     --qtml--round: 10px;
-
+    --qtml--shadow: 10px;
+    
     --qtml--shadetext: #71717a; /* secondary span */
     --qtml--text-big: 9vh;
     --qtml--text-header: 5vh;
@@ -478,7 +479,7 @@ div.notification {
 .text-space {
     letter-spacing: var(--qtml--letter-spacing);}
 .shadow {
-    box-shadow:0 0 100px 1px var(--qtml--outline-color);}
+    box-shadow:0 0 var(--qtml--shadow) 1px var(--qtml--outline-color);}
 .sharp {
     border-radius:0px !important;}
 .round {
