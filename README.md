@@ -180,6 +180,7 @@ All the utility classes that you may apply to elements.
 **Glow**<br/>
 `glow` *make element glow*<br/>
 `glow-hover` *make element glow when hovering*<br/>
+`shadow` *apply shadow around element*<br/>
 
 **Gradient**<br/>
 `gradient` *make gradient text*<br/>
