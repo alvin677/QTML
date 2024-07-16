@@ -477,6 +477,8 @@ div.notification {
     font-size: var(--qtml--text-header);}
 .text-space {
     letter-spacing: var(--qtml--letter-spacing);}
+.shadow {
+    box-shadow:0 0 100px 1px var(--qtml--outline-color);}
 .sharp {
     border-radius:0px !important;}
 .round {
