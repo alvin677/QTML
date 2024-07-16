@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" qtml-mode="dark" qtml-theme="cyan">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QTML Video Template</title>
+        <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
+    </head>
+    <style>
+        body {
+            margin:0;
+            transition:0s;
+        }
+
+        #left-side {
+            width:60vw;
+            height:90vh;
+        }
+        #comments {
+            width:100%;
+            height:40%;
+        }
+        #recommendations {
+            width:20vw;
+            height:90vh;
+        }
+        #video-player {
+            width:100%;
+            height:100%;
+        }
+        #video {
+            height:70%;
+            width:100%;
+        }
+    </style>
+    <body>
+        <div id="content" class="center flex">
+            <div id="left-side" class="">
+                <div id="video">
+                    <video id="video-player" class=""></video><br/>
+                    <div class="container auto-w" style="margin-top:1vh;">
+                        <span class="primary">video title</span><br/>
+                        <span class="small secondary">video description video description video description </span>
+                    </div>
+
+                    <div id="comments" style="margin-top:1vh; height:auto;">
+                        <div class="">
+                            <span class="small primary">user</span><br/>
+                            <span class="small">nice comment</span>
+                        </div>
+                        <div class="">
+                            <span class="small primary">user2</span><br/>
+                            <span class="small">another very nice comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="recommendations" class=""></div>
+        </div>
+    </body>
+</html>
