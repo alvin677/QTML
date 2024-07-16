@@ -17,8 +17,9 @@
             height:90vh;
         }
         #comments {
-            width:100%;
+            width:98%;
             height:40%;
+            margin:1vh;
         }
         #recommendations {
             width:20vw;
@@ -37,33 +38,71 @@
             width:100%;
             border-radius: var(--qtml--border-radius);
         }
+
+        @media (max-width:700px) {
+            #recommendations {
+                display:none;
+            }
+            #mobile_recommended {
+                display:grid !important;
+            }
+            #content {
+                transform:none;
+                top:0;left:0;position:static;
+                display:block;
+            }
+            #video, #left-side {
+                width:100%;
+                height:70vh;
+            }
+            .thumb, .recommended {
+                width:100%;
+            }
+            
+        }
     </style>
     <body>
         <div id="content" class="center flex">
-            <div id="left-side" class="">
+            <div id="left-side">
                 <div id="video">
-                    <video id="video-player" src="./" controls></video><br/>
+                    <video id="video-player" src="./" controls></video>
                     <div class="container auto-w" style="margin-top:1vh;">
                         <span class="primary text-header">video title</span><br/>
                         <span class="secondary">video description video description video description </span>
                     </div>
                     
+                    <div id="mobile_recommended" class="container hide" style="margin-top:1vh;">
+                        <span class="primary bold">You may also like..</span><br/>
+                        <div class="recommended shadow round">
+                            <img class="thumb" src="./workking.gif" /><br/>
+                            <span class="text-sans">recommended video</span><br/>
+                            <a class="primary">user</a>
+                        </div>
+                        
+                        <div class="recommended shadow round">
+                            <img class="thumb" src="./workking.gif" /><br/>
+                            <span class="text-sans">recommended video</span><br/>
+                            <a class="primary">user</a>
+                        </div>
+
+                    </div>
+
                     <div class="flex" style="margin-top:1vh;">
                         <input class="primary auto-w" type="text" placeholder="cool video, keep it up!" />
                         <button class="secondary text-sans" style="margin-left:1vh;">Comment</button>
                     </div>
-                    <div id="comments" style="margin-top:1vh; height:auto;">
-                        <div class="">
-                            <a class="small primary">user</a><br/>
-                            <span class="small">nice comment</span>
+                    <div id="comments" style="margin-top:2vh; height:auto;">
+                        <div>
+                            <a class="primary">user</a><br/>
+                            <span>nice comment</span>
                         </div><br/>
-                        <div class="">
-                            <a class="small primary">user2</a><br/>
-                            <span class="small">another very nice comment</span>
+                        <div>
+                            <a class="primary">user2</a><br/>
+                            <span>another very nice comment</span>
                         </div><br/>
-                        <div class="">
-                            <a class="small primary">user3</a><br/>
-                            <span class="small">last comment, wow!</span>
+                        <div>
+                            <a class="primary">user3</a><br/>
+                            <span>last comment, wow!</span>
                         </div><br/>
                     </div>
                 </div>
@@ -72,13 +111,13 @@
             <div id="recommendations" class="container" style="margin-left:1vh;">
                 <div class="recommended shadow round">
                     <img class="thumb" src="./workking.gif" /><br/>
-                    <span class="text-sans">recommended video</span><br/>
+                    <span class="small text-sans">recommended video</span><br/>
                     <a class="primary small">user</a>
                 </div>
                 <br/>
                 <div class="recommended shadow round">
                     <img class="thumb" src="./workking.gif" /><br/>
-                    <span class="text-sans">recommended video</span><br/>
+                    <span class="small text-sans">recommended video</span><br/>
                     <a class="primary small">user</a>
                 </div>
                 <!-- next video -->
