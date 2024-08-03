@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" qtml-mode="light" qtml-theme="cyan">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QTML Template</title>
+        <link href="https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <script>
+        window.onload = function() {
+            let age_element = document.getElementById("age");
+
+            let today = new Date();
+            let birthDate = new Date(2000, 12, 8);
+
+            let age = today.getFullYear() - birthDate.getFullYear();
+            let monthDifference = today.getMonth() - birthDate.getMonth();
+
+            if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+
+            age_element.textContent = age;
+        }
+
+    </script>
+
+    <body class="text-sans noselect">
+      <span class="text-big">Hello World!</span><br/>
+      <span>I'm -name- <span class="secondary">(GoatCedric)</span>, a <span id="age" class="primary gradient animate"></span> year old programmer from -country-.</span><br/><br/>
+      <span>A couple of the projects that I have worked on includes:</span><br/>
+      
+      <br/>
+      <span class="text-mono small">contact me</span><br/>
+      <a href="https://github.com/alvin677"><button class="secondary"><i class="fa-brands fa-github"></i></button></a>
+      <a href="https://discord.com/users/277358410507354112"><button class="secondary"><i class="fa-brands fa-discord"></i></button></a>
+    </body>
+</html>
