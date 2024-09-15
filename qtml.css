@@ -18,7 +18,7 @@
     
     --qtml--element-background: transparent;
     --qtml--margin: 10px;
-    --qtml--padding: 1.5vh 2.5vh;
+    --qtml--padding: 1rem 1.5rem;
     --qtml--border-radius: 5px;
     --qtml--line-height: 1.2;
     --qtml--transition: 0.3s;
@@ -27,7 +27,7 @@
 
     --qtml--icon-size: /*12px*/ 3vh;
     --qtml--font-size: 3vh;
-    --qtml--button-font-size: 2vh;
+    --qtml--button-font-size: 1.2rem;
     --qtml--font-size-mobile: 16px;
     --qtml--scale: 1.2;
     --qtml--round: 10px;
@@ -45,7 +45,7 @@
 
 /* Themes */
 [qtml-theme="purple"] {
-    --qtml--accent: #5d18dc;
+    --qtml--accent: #7f33ff;
     --qtml--accent-hover: #6119e6;
     --qtml--background: #391084;
     --qtml--background-hover: rgb(65, 18, 144);
