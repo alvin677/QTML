@@ -445,6 +445,23 @@ table.primary td, table.primary th {
 table.primary tr:hover td {
     filter:contrast(0.8);
     transition:0.2s;}
+table.secondary {
+    width:100%;
+    border-collapse: collapse;
+    font-size:var(--qtml--font-size);}
+table.secondary td {
+    background-color: var(--qtml--bg);
+    transition:0.2s;}
+table.secondary th {
+    color:var(--qtml--accent);}
+table.secondary tr:nth-child(even) td {
+    background-color: var(--qtml--background);}
+table.secondary td, table.secondary th {
+    text-align: left;
+    padding: var(--qtml--padding);}
+table.secondary tr:hover td {
+    filter:contrast(0.8);
+    transition:0.2s;}
 .container {
     background-color: var(--qtml--bg-secondary);
     border: var(--qtml--outline);
