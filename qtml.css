@@ -404,8 +404,7 @@ i.secondary {
 a.primary {
     text-decoration: none;
     color: var(--qtml--accent);
-    transition:var(--qtml--transition);
-}
+    transition:var(--qtml--transition);}
 a.primary:hover {
     color: var(--qtml--accent-hover);
     transition:var(--qtml--transition);}
