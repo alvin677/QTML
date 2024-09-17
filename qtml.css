@@ -455,7 +455,7 @@ table.secondary td {
 table.secondary th {
     color:var(--qtml--accent);}
 table.secondary tr:nth-child(even) td {
-    background-color: var(--qtml--outline-color);}
+    background-color: var(--qtml--background);}
 table.secondary td, table.secondary th {
     text-align: left;
     padding: var(--qtml--padding);}
