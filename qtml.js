@@ -1,32 +1,5 @@
-/*
-    write stupid code and ur dead
-*/
-
 let qtml = {
     elements: [],
-    themes: {
-        simple:{
-            textColor:"#171717",
-            padding:"1.5vh 2.5vh",
-            elementBackgroundColor: "#dddddd",
-            borderRadius:"5px",
-            border:"1px solid #171717",
-            fontSize:"1.5vh",
-            font:'sans-serif',
-            transition:"0.3s",
-        },
-        dark:{
-            textColor:"#eeeeee",
-            padding:"1.5vh 2.5vh",
-            backgroundColor:"#171717",
-            elementBackgroundColor: "#222222",
-            borderRadius:"5px",
-            border:"2px solid #404040",
-            fontSize:"1.5vh",
-            font:'sans-serif',
-            transition:"0.3s",
-        }
-    },
     colors: {
         purple:"#5d18dc",
         cyan:"#3df2ad",
@@ -47,11 +20,11 @@ let qtml = {
         mono:'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
     },
     components: {
-        loginForm:function(theme=qtml.themes.simple) {
-            let div = qtml.new("div").setCss({gap:"8px", display:"grid"}).container().centered();
-            let username = qtml.new("input", div.element).set({placeholder:"username"}).setTheme(theme);
-            let password = qtml.new("input", div.element).set({placeholder:"password"}).setTheme(theme);
-            let submit = qtml.new("button", div.element).setText("Submit").setTheme(theme);
+        form:function(text) {
+            let div = qtml.new("div").css({gap:"8px", display:"grid"}).container().centered();
+            let username = qtml.new("input", div.element).set({placeholder:"username"});
+            let password = qtml.new("input", div.element).set({placeholder:"password"});
+            let submit = qtml.new("button", div.element).text(text).hover({fontSize:"10px"});
 
             return {div, username, password, submit};
         },
@@ -66,24 +39,13 @@ let qtml = {
         meta2.setAttribute("content", "width=device-width, initial-scale=1");
         let title = document.createElement("title");
         title.innerHTML = new_title;
-        let qtml_link = document.createElement("link");
-        qtml_link.setAttribute("rel", "stylesheet");
-        qtml_link.setAttribute("href", "https://cdn.jsdelivr.net/gh/alvin677/qtml@latest/qtml.css");
 
         let head = document.head;
         head.appendChild(meta1);
         head.appendChild(meta2);
         head.appendChild(title);
-        head.appendChild(qtml_link);
 
-        let style = document.createElement("style");
-        style.id = "qtml";
-        document.body.appendChild(style);
         document.body.style = "margin:0;padding:0;box-sizing:border-box;";
-    },
-
-    setTheme: function(theme=qtml.themes.simple) {
-        if (theme.backgroundColor) {document.body.style.backgroundColor = theme.backgroundColor};
     },
 
     new: function(element, parent=document.body) {
@@ -94,31 +56,44 @@ let qtml = {
             destroy:function() {
                 element.remove();
             },
-            setCss:function(style={}) {
+            css:function(style={}) {
                 for (let prop in style) {
                     element.style[prop] = style[prop];
                 }
                 return this;
             },
-            setText:function(text) {
+            hover:function(style={}) {
+                let before = element.style;
+                element.onmouseover = function() {
+                    for (let prop in style) {
+                        element.style[prop] = style[prop];
+                    }
+                };
+
+                element.onmouseout = function() {
+                    for (let prop in before) {
+                        element.style[prop] = before[prop];
+                    }
+                }
+            },
+            text:function(text) {
                 element.textContent = text;
                 return this;
             },
-            setColor:function(color) {
+            color:function(color) {
                 element.style.color = color;
                 return this;
             },
-            setBgColor:function(color) {
-                element.style.backgroundColor = color;
+            background:function(color) {
+                element.style.background = color;
                 return this;
             },
-            // shit doesnt seem to work
-            /*setParent:function(p) {
-                element.parentNode = p;
+            font:function(font) {
+                element.style.fontFamily = font;
                 return this;
-            },*/
+            },
             parent:element.parentNode,
-            setId:function(id) {
+            id:function(id) {
                 element.id = id;
                 return this;
             },
@@ -142,12 +117,8 @@ let qtml = {
                 element.style.verticalAlign = "middle";
                 return this;
             },
-            setSize:function(size) {
+            size:function(size) {
                 element.style.fontSize = size;
-                return this;
-            },
-            setPlaceholder:function(text) {
-                element.placeholder = text;
                 return this;
             },
             set:function(properties={}) {
@@ -157,22 +128,13 @@ let qtml = {
                 return this;
             },
             add:function(className) {
-               element.classList.add(className); 
+               element.classList.add(className);
+               return this;
             },
             remove:function(className) {
                 element.classList.remove(className);
-            }, 
-            setTheme:function(theme) {
-                if (theme.textColor) {element.style.color = theme.textColor};
-                if (theme.padding) {element.style.padding = theme.padding};
-                if (theme.backgroundColor) {document.body.style.backgroundColor = theme.backgroundColor};
-                if (theme.elementBackgroundColor) {element.style.backgroundColor= theme.elementBackgroundColor}
-                if (theme.borderRadius) {element.style.borderRadius = theme.borderRadius};
-                if (theme.border) {element.style.border = theme.border};
-                if (theme.fontSize) {element.style.fontSize = theme.fontSize};
-                if (theme.font) {element.style.fontFamily = theme.font};
                 return this;
-            }
+            }, 
         };
 
         this.elements.push(element_data);
