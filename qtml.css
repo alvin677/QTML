@@ -26,7 +26,7 @@
     --qtml--letter-spacing: 1px;
 
     --qtml--icon-size: /*12px*/ 3vh;
-    --qtml--font-size: font-size:clamp(1vh, 3vh, 4vh); /*3vh*/
+    --qtml--font-size: clamp(1vh, 3vh, 4vh); /*3vh*/
     --qtml--button-font-size: 2vh;
     --qtml--font-size-mobile: 16px;
     --qtml--scale: 1.2;
@@ -436,7 +436,8 @@ table.primary {
     border-radius:10px;
     border:2px solid var(--qtml--outline-color);
     border-spacing: 0;
-    border-collapse: separate;}
+    border-collapse: separate;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);}
 table.primary td {
     background-color: var(--qtml--bg);
     transition:0.2s;}
