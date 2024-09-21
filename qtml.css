@@ -429,16 +429,23 @@ div.border {
 iframe.primary {
     border-radius: var(--qtml--border-radius);}
 table.primary {
-    width:100%;
+    width:95%;
+    margin:auto;
     border-collapse: collapse;
-    font-size:var(--qtml--font-size);}
+    font-size:var(--qtml--font-size);
+    border-radius:10px;
+    border:2px solid var(--qtml--outline-color);
+    border-spacing: 0;
+    border-collapse: separate;}
 table.primary td {
     background-color: var(--qtml--bg);
     transition:0.2s;}
 table.primary th {
-    text-decoration:underline;}
+    background-color: var(--qtml--bg);
+    color:var(--qtml--accent);
+    font-weight:800;}
 table.primary tr:nth-child(even) td {
-    background-color: var(--qtml--accent);}
+    background-color: var(--qtml--bg-secondary);}
 table.primary td, table.primary th {
     text-align: left;
     padding: var(--qtml--padding);}
@@ -462,6 +469,17 @@ table.secondary td, table.secondary th {
 table.secondary tr:hover td {
     filter:contrast(0.8);
     transition:0.2s;}
+dialog.primary {
+    border-radius:var(--qtml--border-radius);
+    padding: var(--qtml--padding);
+    border:0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    background: var(--qtml--bg);}
+dialog.primary::backdrop {
+    backdrop-filter: blur(10px);}
+dialog.primary span {
+    color:var(--qtml--color);}
+
 .container {
     background-color: var(--qtml--bg-secondary);
     border: var(--qtml--outline);
