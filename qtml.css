@@ -26,7 +26,7 @@
     --qtml--letter-spacing: 1px;
 
     --qtml--icon-size: /*12px*/ 3vh;
-    --qtml--font-size: font-size:clamp(2vw, 2vw, 2vh); /*3vh*/
+    --qtml--font-size: font-size:clamp(1vh, 3vh, 3vh); /*3vh*/
     --qtml--button-font-size: 2vh;
     --qtml--font-size-mobile: 16px;
     --qtml--scale: 1.2;
