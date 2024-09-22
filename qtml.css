@@ -26,7 +26,7 @@
     --qtml--letter-spacing: 1px;
 
     --qtml--icon-size: /*12px*/ 3vh;
-    --qtml--font-size: clamp(1vh, 3vh, 4vh); /*3vh*/
+    --qtml--font-size: clamp(1vh, 3vh, 4vh);/*3vh*/
     --qtml--button-font-size: 2vh;
     --qtml--font-size-mobile: 16px;
     --qtml--scale: 1.2;
@@ -262,7 +262,8 @@ button.primary {
     letter-spacing: 0.5px;
     border: var(--qtml--outline);
     border-color: var(--qtml--outline-color);
-    font-size: var(--qtml--button-font-size)}
+    /*font-size: var(--qtml--button-font-size);*/
+    box-sizing: border-box}
 button.primary:hover {
     box-shadow:0 0 10px var(--qtml--accent);
     background:var(--qtml--accent);
