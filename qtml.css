@@ -438,7 +438,7 @@ table.primary {
     border:2px solid var(--qtml--outline-color);
     border-spacing: 0;
     border-collapse: separate;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);}
+    /*box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);*/}
 table.primary td {
     background-color: var(--qtml--bg);
     transition:0.2s;}
@@ -479,8 +479,8 @@ dialog.primary {
     background: var(--qtml--bg);}
 dialog.primary::backdrop {
     backdrop-filter: blur(10px);}
-dialog.primary span {
-    color:var(--qtml--color);}
+/*dialog.primary span {
+    color:var(--qtml--color);}*/
 
 .container {
     background-color: var(--qtml--bg-secondary);
