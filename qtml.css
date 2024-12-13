@@ -98,7 +98,7 @@
     --qtml--background: #ffffff;
     --qtml--background-hover: #ffffff;
 
-    --qtml--color: #000000 !important;
+    --qtml--color: #000000;
 }
 [qtml-theme="black"] {
     --qtml--accent: #000000;
@@ -106,7 +106,7 @@
     --qtml--background: #000000;
     --qtml--background-hover: #151515;
 
-    --qtml--color: #ffffff !important;
+    --qtml--color: #ffffff;
 }
 [qtml-theme="gray"] {
     --qtml--accent: #71717a;
@@ -123,7 +123,7 @@
 [qtml-mode="light"] {
     --qtml--bg: #ffffff;
     --qtml--bg-secondary: #f9f9f9;
-    --qtml--color: #111111;
+    --qtml--color: #111111 !important;
     --qtml--color-secondary: #000000;
     --qtml--outline-color: #dddddd;
     --qtml--outline-hover: #bbbbbb;
@@ -136,7 +136,7 @@
 [qtml-mode="dark"] {
     --qtml--bg: #111111;
     --qtml--bg-secondary: #131313;
-    --qtml--color: #ffffff;
+    --qtml--color: #ffffff !important;
     --qtml--color-secondary: #cccccc;
     --qtml--outline-color: #404040;
     --qtml--outline-hover: #606060;
