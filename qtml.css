@@ -343,7 +343,7 @@ textarea.primary {
     border-color: var(--qtml--outline-color);
     border-radius: var(--qtml--border-radius);
     padding: var(--qtml--padding);
-    color:var(--qtml--color);}  
+    color:var(--qtml--color) !important;}  
 textarea.primary:hover {
     border-color: var(--qtml--outline-hover);}
 textarea.primary:hover::placeholder {
