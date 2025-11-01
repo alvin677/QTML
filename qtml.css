@@ -225,6 +225,13 @@ hr {
     border: none;}
 hr.primary {
     background-color: var(--qtml--accent);}
+code {
+    background: rgba(50, 50, 50, 0.5);
+    color: var(--qtml--accent);
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 0.95em;}
 /* Utilities */
 .color {
     color: var(--qtml--color) !important;}
@@ -737,4 +744,5 @@ hr.pulse {
     span.small, i.small, button.small, input.small, a.small {
         font-size:1vh !important;}
 }
+
 
